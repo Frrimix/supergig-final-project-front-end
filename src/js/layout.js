@@ -23,6 +23,7 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
+						<Route exact path="/login" />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
