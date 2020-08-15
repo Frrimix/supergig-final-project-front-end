@@ -5,7 +5,7 @@ import "../../styles/createAccount.scss";
 
 export const CreateAccount = () => {
 	return (
-		<div className="createAccount-container">
+		<div className="createAccount-container d-flex justify-content-center">
 			<p>This is the create account view.</p>
 		</div>
 	);

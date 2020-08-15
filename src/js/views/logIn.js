@@ -5,7 +5,7 @@ import "../../styles/logIn.scss";
 
 export const LogIn = () => {
 	return (
-		<div className="logIn-container">
+		<div className="logIn-container d-flex justify-content-center">
 			<p>This is the log-in view.</p>
 		</div>
 	);

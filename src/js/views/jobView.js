@@ -5,7 +5,7 @@ import "../../styles/jobView.scss";
 
 export const JobView = () => {
 	return (
-		<div className="jobView-container">
+		<div className="jobView-container d-flex justify-content-center">
 			<p>This is the job view.</p>
 		</div>
 	);

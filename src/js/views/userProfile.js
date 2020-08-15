@@ -5,7 +5,7 @@ import "../../styles/userProfile.scss";
 
 export const UserProfile = () => {
 	return (
-		<div className="userProfile-container">
+		<div className="userProfile-container d-flex justify-content-center">
 			<p>This is the user profile view.</p>
 		</div>
 	);

@@ -5,7 +5,7 @@ import "../../styles/jobPosting.scss";
 
 export const JobPosting = () => {
 	return (
-		<div className="jobPosting-container">
+		<div className="jobPosting-container d-flex justify-content-center">
 			<p>This is the job posting.</p>
 		</div>
 	);

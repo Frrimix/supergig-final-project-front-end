@@ -1,6 +1,11 @@
 // Navbar
+.navbar {
+    max-height: 75px;
+    padding-top: 25px;
+}
 .company-logo {
     max-height: 100px;
+    padding-left: 2rem;
 }
 .nav-link {
     font-size: 20px;
