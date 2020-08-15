@@ -1,19 +1,21 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
-
-{
-	/* Importing views*/
-}
-import { Home } from "./views/home";
-import { CreateAccount } from "./views/createAccount";
 import injectContext from "./store/appContext";
 
-{
-	/* Importing components*/
-}
+// Importing views*/
+import { Home } from "./views/home";
+import { CreateAccount } from "./views/createAccount";
+import { LogIn } from "./views/logIn";
+import { UserProfile } from "./views/userProfile";
+import { AboutUs } from "./views/aboutUs";
+import { JobFeed } from "./views/jobFeed";
+
+// Importing components*/
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { JobView } from "./views/jobView";
+import { JobPosting } from "./views/jobPosting";
 
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -34,7 +36,31 @@ const Layout = () => {
 						<Route exact path="/create-account">
 							<CreateAccount />
 						</Route>
-
+						{/* The route below takes you to log-in */}
+						<Route exact path="/log-in">
+							<LogIn />
+						</Route>
+						{/* The route below takes you to user profile */}
+						<Route exact path="/user-profile">
+							<UserProfile />
+						</Route>
+						{/* The route below takes you to about us */}
+						<Route exact path="/about-us">
+							<AboutUs />
+						</Route>
+						{/* The route below takes you to job feed */}
+						<Route exact path="/jobs">
+							<JobFeed />
+						</Route>
+						{/* The route below takes you to job view */}
+						<Route exact path="/job-view">
+							<JobView />
+						</Route>
+						{/* The route below takes you to job posting */}
+						<Route exact path="/job-posting">
+							<JobPosting />
+						</Route>
+						{/* The route below takes you to not found */}
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
