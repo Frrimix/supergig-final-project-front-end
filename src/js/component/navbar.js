@@ -29,6 +29,19 @@ export const Navbar = () => {
 				<span className="navbar-toggler-icon"></span>
 			</button>
 			<div className="collapse navbar-collapse" id="navbarNav">
+				<div className="col-10 text-right d-md-none">
+					<button
+						className="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span className="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
 				<ul className="navbar-nav">
 					<li className="nav-item active">
 						{/* This is the Home link on the navbar, clicking it takes you to the home page view */}
