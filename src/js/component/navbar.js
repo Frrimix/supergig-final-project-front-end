@@ -1,12 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
+
+// Importing views*/
+import { JobFeed } from "../views/jobFeed";
+import { AboutUs } from "../views/aboutUs";
+import { Home } from "../views/home";
+import { LogIn } from "../views/logIn";
+
+// Importing styles*/
 import "../../styles/components.scss";
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light">
-			<img className="company-logo" src={companyLogo} href="#" />
+			{/* This is the company logo, clicking it takes you to the home-page */}
+			<Link to={"/"}>
+				<img className="company-logo" src={companyLogo} href="#" />
+			</Link>
 			<button
 				className="navbar-toggler"
 				type="button"
@@ -20,24 +31,28 @@ export const Navbar = () => {
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav">
 					<li className="nav-item active">
-						<a className="nav-link" href="#">
-							Home <span className="sr-only">(current)</span>
-						</a>
+						{/* This is the Home link on the navbar, clicking it takes you to the home page view */}
+						<Link to={"/"} className="nav-link" href="#">
+							Home
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Features
-						</a>
+						{/* This is the Jobs link on the navbar, clicking it takes you to the job feed view */}
+						<Link to={"/jobs"} className="nav-link" href="#">
+							Jobs
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Pricing
-						</a>
+						{/* This is the About Us link on the navbar, clicking it takes you to the about us view */}
+						<Link to={"/about-us"} className="nav-link" href="#">
+							About Us
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						{/* This is the User icon on the navbar, clicking it takes you to the log in view */}
+						<Link to={"/log-in"} className="nav-link" href="#">
 							<i className="nav-link fas fa-user-circle"></i>
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

@@ -10,12 +10,12 @@ import { LogIn } from "./views/logIn";
 import { UserProfile } from "./views/userProfile";
 import { AboutUs } from "./views/aboutUs";
 import { JobFeed } from "./views/jobFeed";
+import { JobView } from "./views/jobView";
+import { JobPosting } from "./views/jobPosting";
 
 // Importing components*/
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { JobView } from "./views/jobView";
-import { JobPosting } from "./views/jobPosting";
 
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
