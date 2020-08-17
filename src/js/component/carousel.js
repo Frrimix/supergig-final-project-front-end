@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import ReactBootstrap from "react-bootstrap";
+import ReactBootstrap, { Carousel } from "react-bootstrap";
 import { render } from "react-dom";
-import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
 
@@ -11,6 +10,16 @@ import { Home } from "../views/home";
 // Importing styles*/
 import "../../styles/components.scss";
 
+// Declaring variables for photos in carousel*/
+const firstPhoto =
+	"https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80";
+
+const secondPhoto =
+	"https://images.unsplash.com/photo-1590245637778-819a2ce211da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80";
+
+const thirdPhoto =
+	"https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
+
 export function ControlledCarousel() {
 	const [index, setIndex] = useState(0);
 
@@ -18,38 +27,35 @@ export function ControlledCarousel() {
 		setIndex(selectedIndex);
 	};
 	return (
-		<Carousel activeIndex={index} onSelect={handleSelect}>
-			<Carousel.Item>
-				<img
-					className="d-block w-100"
-					src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-					alt="First slide"
-				/>
-				<Carousel.Caption>
-					<h3>First slide label</h3>
-					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-				</Carousel.Caption>
-			</Carousel.Item>
-			<Carousel.Item>
-				<img
-					className="d-block w-100"
-					src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-					alt="Second slide"
-				/>
+		<div className="carousel-container">
+			<Carousel activeIndex={index} onSelect={handleSelect}>
+				{/* First Carousel Item */}
+				<Carousel.Item>
+					<img className="carousel-img" src={firstPhoto} alt="First slide" />
+					<Carousel.Caption>
+						<h3>First slide label</h3>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</Carousel.Caption>
+				</Carousel.Item>
 
-				<Carousel.Caption>
-					<h3>Second slide label</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</Carousel.Caption>
-			</Carousel.Item>
-			<Carousel.Item>
-				<img className="d-block w-100" src="holder.js/800x400?text=Third slide&bg=20232a" alt="Third slide" />
+				{/* Second Carousel Item */}
+				<Carousel.Item>
+					<img className="carousel-img" src={secondPhoto} alt="Second slide" />
+					<Carousel.Caption>
+						<h3>Second slide label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</Carousel.Caption>
+				</Carousel.Item>
 
-				<Carousel.Caption>
-					<h3>Third slide label</h3>
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-				</Carousel.Caption>
-			</Carousel.Item>
-		</Carousel>
+				{/* Third Carousel Item */}
+				<Carousel.Item>
+					<img className="carousel-img" src={thirdPhoto} alt="Third slide" />
+					<Carousel.Caption>
+						<h3>Third slide label</h3>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</Carousel.Caption>
+				</Carousel.Item>
+			</Carousel>
+		</div>
 	);
 }
