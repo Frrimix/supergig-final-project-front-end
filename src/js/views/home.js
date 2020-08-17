@@ -6,7 +6,7 @@ import "../../styles/home.scss";
 export const Home = () => {
 	return (
 		<div className="home-container d-flex justify-content-center">
-			<p>This is the home view.</p>
+			<p>WELCOME TO THE SUPERGIG WEBSITE.</p>
 		</div>
 	);
 };
