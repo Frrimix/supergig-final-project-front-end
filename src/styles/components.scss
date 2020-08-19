@@ -23,7 +23,10 @@
 }
 
 // Log-In form
-
+.logIn-container {
+    width: 100%;
+    height: 100%;
+}
 .logInForm-container {
     padding: 20px;
     border: 1px solid white;
@@ -31,18 +34,32 @@
     box-shadow: 5px 5px 15px #888888;
     max-height: 475px;
     max-width: 900px;
-}
-.logIn-container {
-    width: 100%;
-    height: 100%;
+    padding-right: 40px;
 }
 .logInForm-img {
     height: 350px;
 }
 .logInForm-create-account {
     margin-left: 25%;
+    color: black
 }
 .logInForm-create-account:hover {
     text-decoration: underline;
+    color: #38B553
 }
+
+.submit-button{
+    background-color: #38B553;
+    border-color: #38B553;;
+}
+.submit-button:hover {
+    background-color: #237034;
+    border-color: #237034;;
+    
+}
+
+// .logInForm-logo {
+//     width: 75px;
+//     height: auto;
+// }
 
