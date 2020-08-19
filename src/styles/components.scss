@@ -22,6 +22,25 @@
     height: 500px;
 }
 
+// Footer
+.main-footer {
+    color: white;
+    background-color: #38B553;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.footer-link:link {
+    color: white;
+}
+.footer-link:visited {
+    color: white;
+}
+
+
 // Log-In form
 .logIn-container {
     width: 100%;
