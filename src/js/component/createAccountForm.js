@@ -14,10 +14,12 @@ export const CreateAccountForm = () => {
 		<div className="createAccountForm-container">
 			{/* Image container - L hand side */}
 			<div className="createAccount-second-container d-flex justify-content-around">
-				<img
-					className="createAccountForm-img"
-					src="https://img.freepik.com/free-vector/vector-illustration-woman-sitting-front-computer-working-project_101484-102.jpg?size=626&ext=jpg"
-				/>
+				<div className="createAccountForm-img - container">
+					<img
+						className="createAccountForm-img"
+						src="https://img.freepik.com/free-vector/vector-illustration-woman-sitting-front-computer-working-project_101484-102.jpg?size=626&ext=jpg"
+					/>
+				</div>
 				{/* Log-in Form - R hand side */}
 				<Form>
 					<h1 className="d-flex justify-content-center">Create Account</h1>
@@ -142,7 +144,6 @@ export const CreateAccountForm = () => {
 							</Form.Control>
 						</Form.Group>
 					</Form.Row>
-
 					<Button className="submit-button" variant="primary" type="submit">
 						Submit
 					</Button>
