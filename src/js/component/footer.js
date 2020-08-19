@@ -19,7 +19,11 @@ export const Footer = () => (
 						</li>
 						<li>Contact Us</li>
 						<li>
-							<a className="footer-link" href="https://github.com/paocastrob/FinalProject">
+							<a
+								className="footer-link"
+								href="https://github.com/paocastrob/FinalProject"
+								rel="noopener noreferrer"
+								target="_blank">
 								Repository
 							</a>
 						</li>

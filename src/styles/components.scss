@@ -40,7 +40,6 @@
     color: white;
 }
 
-
 // Log-In form
 .logIn-container {
     width: 100%;
@@ -73,6 +72,14 @@
 .submit-button:hover {
     background-color: #237034;
     border-color: #237034;; 
+}
+.disclaimer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    margin-top: 20px;
+    font-size: 9px;
+    color: #888888;
 }
 
 // Create Account form
