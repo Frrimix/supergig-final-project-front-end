@@ -45,7 +45,6 @@ export const LogInForm = () => {
 			<Link to={"/create-account"} href="#">
 				<a className="logInForm-create-account">Create an account</a>
 			</Link>
-			<p></p>
 		</div>
 	);
 };

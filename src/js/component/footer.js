@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Router, Switch, Link } from "react-router-dom";
+import companyLogo from "../../img/supergig-logo.png";
 
 // Importing styles*/
 import "../../styles/components.scss";
@@ -69,13 +70,16 @@ export const Footer = () => (
 					<h5>Social Media</h5>
 					<ul className="list-unstyled">
 						<li>
-							<i className="fab fa-instagram"></i>
+							<i className="social-media-icons fab fa-instagram"></i>
+							Instagram
 						</li>
 						<li>
-							<i className="fab fa-facebook-square"></i>
+							<i className="social-media-icons fab fa-facebook-square"></i>
+							Facebook
 						</li>
 						<li>
-							<i className="fab fa-twitter-square"></i>
+							<i className="social-media-icons fab fa-twitter-square"></i>
+							Twitter
 						</li>
 					</ul>
 				</div>
