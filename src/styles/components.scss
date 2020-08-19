@@ -21,3 +21,28 @@
     width: 1000px;
     height: 500px;
 }
+
+// Log-In form
+
+.logInForm-container {
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    max-height: 475px;
+    max-width: 900px;
+}
+.logIn-container {
+    width: 100%;
+    height: 100%;
+}
+.logInForm-img {
+    height: 350px;
+}
+.logInForm-create-account {
+    margin-left: 25%;
+}
+.logInForm-create-account:hover {
+    text-decoration: underline;
+}
+
