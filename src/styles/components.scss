@@ -56,3 +56,30 @@
     border-color: #237034;; 
 }
 
+// Create Account form
+.createAccount-container {
+    width: 100%;
+    height: 100%;
+}
+.createAccountForm-container {
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    max-height: 600px;
+    max-width: 1000px;
+    padding-right: 40px;
+}
+.createAccountForm-img {
+    height: 350px;
+    margin-top: 5%;
+}
+.createAcountForm-Login {
+    margin-bottom: 10%;
+    margin-left: 25%;
+    color: black
+}
+.createAcountForm-Login:hover {
+    text-decoration: underline;
+    color: #38B553
+}
