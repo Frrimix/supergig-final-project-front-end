@@ -1,11 +1,13 @@
 // Navbar
 .navbar {
-    max-height: 75px;
+    max-height: 80px;
     padding-top: 25px;
+    margin-bottom: 10px;
 }
 .company-logo {
     max-height: 100px;
     padding-left: 2rem;
+    padding-bottom: 10px;
 }
 .nav-link {
     font-size: 20px;
@@ -18,6 +20,81 @@
 // Carousel
 .carousel-img {
     object-fit: cover;
-    width: 1000px;
+    width: 100%;
     height: 500px;
+}
+
+// Footer
+.main-footer {
+    color: white;
+    background-color: #38B553;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.footer-link:link {
+    color: white;
+}
+.footer-link:visited {
+    color: white;
+}
+.social-media-icons {
+    padding-right: 5px;
+}
+
+// Log-In form
+.logInForm-container {
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    max-height: 475px;
+    max-width: 900px;
+    padding-right: 40px;
+}
+.logInForm-img {
+    height: 350px;
+}
+.logInForm-create-account {
+    margin-left: 25%;
+    color: black
+}
+.logInForm-create-account:hover {
+    text-decoration: underline;
+    color: #38B553
+}
+.submit-button{
+    background-color: #38B553;
+    border-color: #38B553;;
+}
+.submit-button:hover {
+    background-color: #237034;
+    border-color: #237034;; 
+}
+
+
+// Create Account form
+.createAccountForm-container {
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    max-height: 600px;
+    max-width: 1000px;
+    padding-right: 40px;
+}
+.createAccountForm-img {
+    height: 350px;
+    margin-top: 5%;
+}
+.createAcountForm-Login {
+    margin-left: 25%;
+    color: black
+}
+.createAcountForm-Login:hover {
+    text-decoration: underline;
+    color: #38B553
 }

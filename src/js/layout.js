@@ -23,51 +23,53 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="d-flex flex-column h-100">
-			<BrowserRouter basename={basename}>
-				<ScrollToTop>
-					<Navbar />
-					<Switch>
-						{/* The route below takes you to the homepage */}
-						<Route exact path="/">
-							<Home />
-						</Route>
-						{/* The route below takes you to create account */}
-						<Route exact path="/create-account">
-							<CreateAccount />
-						</Route>
-						{/* The route below takes you to log-in */}
-						<Route exact path="/log-in">
-							<LogIn />
-						</Route>
-						{/* The route below takes you to user profile */}
-						<Route exact path="/user-profile">
-							<UserProfile />
-						</Route>
-						{/* The route below takes you to about us */}
-						<Route exact path="/about-us">
-							<AboutUs />
-						</Route>
-						{/* The route below takes you to job feed */}
-						<Route exact path="/jobs">
-							<JobFeed />
-						</Route>
-						{/* The route below takes you to job view */}
-						<Route exact path="/job-view">
-							<JobView />
-						</Route>
-						{/* The route below takes you to job posting */}
-						<Route exact path="/job-posting">
-							<JobPosting />
-						</Route>
-						{/* The route below takes you to not found */}
-						<Route>
-							<h1>Not found!</h1>
-						</Route>
-					</Switch>
-					<Footer />
-				</ScrollToTop>
-			</BrowserRouter>
+		<div className="page-container d-flex flex-column h-100">
+			<div className="content-wrap">
+				<BrowserRouter basename={basename}>
+					<ScrollToTop>
+						<Navbar />
+						<Switch>
+							{/* The route below takes you to the homepage */}
+							<Route exact path="/">
+								<Home />
+							</Route>
+							{/* The route below takes you to create account */}
+							<Route exact path="/create-account">
+								<CreateAccount />
+							</Route>
+							{/* The route below takes you to log-in */}
+							<Route exact path="/log-in">
+								<LogIn />
+							</Route>
+							{/* The route below takes you to user profile */}
+							<Route exact path="/user-profile">
+								<UserProfile />
+							</Route>
+							{/* The route below takes you to about us */}
+							<Route exact path="/about-us">
+								<AboutUs />
+							</Route>
+							{/* The route below takes you to job feed */}
+							<Route exact path="/jobs">
+								<JobFeed />
+							</Route>
+							{/* The route below takes you to job view */}
+							<Route exact path="/job-view">
+								<JobView />
+							</Route>
+							{/* The route below takes you to job posting */}
+							<Route exact path="/job-posting">
+								<JobPosting />
+							</Route>
+							{/* The route below takes you to not found */}
+							<Route>
+								<h1>Not found!</h1>
+							</Route>
+						</Switch>
+					</ScrollToTop>
+				</BrowserRouter>
+			</div>
+			<Footer />
 		</div>
 	);
 };
