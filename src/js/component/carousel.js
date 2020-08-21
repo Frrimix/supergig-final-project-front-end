@@ -27,7 +27,7 @@ export function ControlledCarousel() {
 		setIndex(selectedIndex);
 	};
 	return (
-		<div className="carousel-container">
+		<div className="carousel-container d-block w-100">
 			<Carousel activeIndex={index} onSelect={handleSelect}>
 				{/* First Carousel Item */}
 				<Carousel.Item>
