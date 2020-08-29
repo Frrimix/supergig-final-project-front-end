@@ -66,8 +66,10 @@ export const Home = () => {
 						<Card.Title>Explore SuperGig</Card.Title>
 						<Card.Text>
 							Lots of members of your community are looking for people willing to work short-term gigs for
-							them. If youre looking to assist members of your community and earn money while you do it
-							you have found the right place.
+							them.
+							<br />
+							If you are looking to assist members of your community and earn money while you do it you
+							have found the right place.
 							<br />
 							Simply sign-in if you already have an account or sign-up if youre a new user and search for
 							avalaible jobs.
