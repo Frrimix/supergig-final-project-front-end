@@ -1,5 +1,5 @@
 .home-banner {
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-color: #F5F6F7;
 }
@@ -10,21 +10,29 @@ h1 {
 }
 
 .ico{
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     margin-top: 25px;
     font-size: 30pt;
     color: #38B553;
+    padding-bottom: 5px;
 }
 .ico:before{
     margin-left: 25%;
 }
-
 .icons-text {
     font-size: 13pt;
     color: black;
-    margin-left: auto;
-    margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
+    margin-top: 10%;
+    text-align: center;
+}
+.banner-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    max-width: 60%;
+    color: black;
+    margin-left: 22%;
+    margin-top: 0px;
 }
