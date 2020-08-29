@@ -72,12 +72,16 @@ export const Home = () => {
 							Simply sign-in if you already have an account or sign-up if youre a new user and search for
 							avalaible jobs.
 						</Card.Text>
-						<Button className="home-card-button" variant="primary">
-							Log-In
-						</Button>
-						<Button className="home-card-button" variant="primary">
-							Sign-Up
-						</Button>
+						<Link to={"/log-in"} href="#">
+							<Button className="home-card-button" variant="primary">
+								Log-In
+							</Button>
+						</Link>
+						<Link to={"/create-account"} href="#">
+							<Button className="home-card-button" variant="primary">
+								Sign-Up
+							</Button>
+						</Link>
 					</Card.Body>
 				</Card>
 			</div>
