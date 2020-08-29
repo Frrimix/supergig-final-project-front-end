@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/home.scss";
 import { ControlledCarousel } from "./../component/carousel";
+import ReactBootstrap, { Card, Button } from "react-bootstrap";
 
 export const Home = () => {
 	return (
@@ -57,6 +58,28 @@ export const Home = () => {
 						</p>
 					</div>
 				</div>
+			</div>
+
+			<div className="card-container d-flex justify-content-center w-100">
+				<Card className="text-center">
+					<Card.Body className="card-body">
+						<Card.Title>Explore SuperGig</Card.Title>
+						<Card.Text>
+							Lots of members of your community are looking for people willing to work short-term gigs for
+							them. If youre looking to assist members of your community and earn money while you do it
+							you have found the right place.
+							<br />
+							Simply sign-in if you already have an account or sign-up if youre a new user and search for
+							avalaible jobs.
+						</Card.Text>
+						<Button className="home-card-button" variant="primary">
+							Log-In
+						</Button>
+						<Button className="home-card-button" variant="primary">
+							Sign-Up
+						</Button>
+					</Card.Body>
+				</Card>
 			</div>
 		</div>
 	);
