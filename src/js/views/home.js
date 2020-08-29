@@ -6,8 +6,22 @@ import { ControlledCarousel } from "./../component/carousel";
 
 export const Home = () => {
 	return (
-		<div className="home-container d-flex justify-content-center">
-			<ControlledCarousel />
+		<div className="content-wrapper">
+			<div className="home-container d-flex justify-content-center">
+				<ControlledCarousel />
+			</div>
+			<div className="home-banner">
+				<div className="home-banner-header d-flex justify-content-center">
+					<h1>How SuperGig Works For You</h1>
+				</div>
+				<div className="home-banner-icons">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 };
