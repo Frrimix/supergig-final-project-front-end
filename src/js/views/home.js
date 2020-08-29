@@ -14,12 +14,19 @@ export const Home = () => {
 				<div className="home-banner-header d-flex justify-content-center">
 					<h1>How SuperGig Works For You</h1>
 				</div>
-				<div className="home-banner-icons">
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+				<div className="home-banner-icons d-flex justify-content-center">
+					<i className="fas fa-search ico">
+						<h3 className="icons-text">Search for jobs</h3>
+					</i>
+					<i className="fas fa-paste ico">
+						<h3 className="icons-text">Search for jobs</h3>
+					</i>
+					<i className="fas fa-hand-holding-usd ico">
+						<h3 className="icons-text">Search for jobs</h3>
+					</i>
+					<i className="fas fa-comments ico">
+						<h3 className="icons-text">Search for jobs</h3>
+					</i>
 				</div>
 			</div>
 		</div>
