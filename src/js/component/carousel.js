@@ -11,14 +11,13 @@ import { Home } from "../views/home";
 import "../../styles/components.scss";
 
 // Declaring variables for photos in carousel*/
-const firstPhoto =
-	"https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80";
+const firstPhoto = "https://i.imgur.com/zfGVMgi.jpg";
 
-const secondPhoto =
-	"https://images.unsplash.com/photo-1590245637778-819a2ce211da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80";
+const secondPhoto = "https://i.imgur.com/PxOr4HM.png";
 
-const thirdPhoto =
-	"https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
+const thirdPhoto = "https://i.imgur.com/g5WppRD.jpg";
+
+// https://i.imgur.com/In2JHMQ.jpg
 
 export function ControlledCarousel() {
 	const [index, setIndex] = useState(0);
