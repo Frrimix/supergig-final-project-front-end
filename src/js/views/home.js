@@ -53,9 +53,7 @@ export const Home = () => {
 						<i className="fas fa-comments ico">
 							<h3 className="icons-text">Build Relationships</h3>
 						</i>
-						<p className="banner-description">
-							Build relationships within your community that could lead to future jobs.
-						</p>
+						<p className="banner-description">Build professional relationships within your community.</p>
 					</div>
 				</div>
 			</div>

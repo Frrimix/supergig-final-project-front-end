@@ -10,14 +10,22 @@ import { Home } from "../views/home";
 // Importing styles*/
 import "../../styles/components.scss";
 
-// Declaring variables for photos in carousel*/
-const firstPhoto = "https://i.imgur.com/zfGVMgi.jpg";
+// Declaring variables for photos in carousel
+const firstPhoto = "https://i.imgur.com/In2JHMQ.jpg"; //painter 1
 
-const secondPhoto = "https://i.imgur.com/PxOr4HM.png";
+const secondPhoto = "https://i.imgur.com/LFisfmm.jpg?1"; //landscaper 1
 
-const thirdPhoto = "https://i.imgur.com/g5WppRD.jpg";
+const thirdPhoto = "https://i.imgur.com/rtLgqLA.jpg?1"; //people smiling 2
 
-// https://i.imgur.com/In2JHMQ.jpg
+// Optional Photos
+//https://i.imgur.com/zfGVMgi.jpg - handyman
+//https://i.imgur.com/In2JHMQ.jpg - painter 1
+//https://i.imgur.com/sq7Kjo4.jpg?1 - painter  2
+//https://i.imgur.com/g5WppRD.jpg - people smiling 1
+//https://i.imgur.com/rtLgqLA.jpg?1 - people smiling 2
+//https://i.imgur.com/LFisfmm.jpg?1 - landscaper 1
+//https://i.imgur.com/EpNkP8z.jpg?1 - landscaper 2
+//https://i.imgur.com/cLg4VJB.jpg - ironworker
 
 export function ControlledCarousel() {
 	const [index, setIndex] = useState(0);
