@@ -15,10 +15,7 @@ export const CreateAccountForm = () => {
 			{/* Image container - L hand side */}
 			<div className="createAccount-second-container d-flex justify-content-around">
 				<div className="createAccountForm-img - container">
-					<img
-						className="createAccountForm-img"
-						src="https://img.freepik.com/free-vector/vector-illustration-woman-sitting-front-computer-working-project_101484-102.jpg?size=626&ext=jpg"
-					/>
+					<img className="createAccountForm-img" src="https://i.imgur.com/LiUCr8U.jpg" />
 				</div>
 				{/* Log-in Form - R hand side */}
 				<Form>
