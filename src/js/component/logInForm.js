@@ -29,6 +29,9 @@ export const LogInForm = () => {
 						<Form.Label>Password</Form.Label>
 						<Form.Control type="password" placeholder="Password" />
 					</Form.Group>
+					<a className="logInForm-forgotPassword" href="#">
+						Forgot Password
+					</a>
 					<Form.Group controlId="formBasicCheckbox">
 						<Form.Check type="checkbox" label="Remember Me" />
 					</Form.Group>
