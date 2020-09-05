@@ -114,3 +114,21 @@
     text-decoration: underline;
     color: #38B553
 }
+
+// Job Posting form
+.DescriptionInput{
+    height: 100px;
+}
+.jobPostingForm-container {
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    max-width: 1200px;
+    padding-right: 40px;
+    // margin-bottom: 5px;
+}
+.jobPostingForm-img {
+    height: 350px;
+    margin-top: 6rem;
+}
