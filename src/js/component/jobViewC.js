@@ -13,7 +13,7 @@ export const JobViewC = () => {
 			<CardGroup>
 				{/* This is sample card one */}
 				<Card>
-					<Card.Body>
+					<Card.Body className="jobViewCard">
 						<Card.Title>Job Title</Card.Title>
 						<Card.Text>This is the job description</Card.Text>
 						<Card.Text>This is the job address</Card.Text>
@@ -24,7 +24,7 @@ export const JobViewC = () => {
 				</Card>
 				{/* This is sample card two */}
 				<Card>
-					<Card.Body>
+					<Card.Body className="jobViewCard">
 						<Card.Title>Job Title</Card.Title>
 						<Card.Text>This is the job description</Card.Text>
 						<Card.Text>This is the job address</Card.Text>
@@ -35,7 +35,7 @@ export const JobViewC = () => {
 				</Card>
 				{/* This is sample card three */}
 				<Card>
-					<Card.Body>
+					<Card.Body className="jobViewCard">
 						<Card.Title>Job Title</Card.Title>
 						<Card.Text>This is the job description</Card.Text>
 						<Card.Text>This is the job address</Card.Text>
