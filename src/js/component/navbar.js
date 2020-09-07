@@ -51,7 +51,7 @@ export const Navbar = () => {
 					</li>
 					<li className="nav-item">
 						{/* This is the Jobs link on the navbar, clicking it takes you to the job feed view */}
-						<Link to={"/jobs"} className="nav-link" href="#">
+						<Link to={"/job-view"} className="nav-link" href="#">
 							Jobs
 						</Link>
 					</li>
