@@ -4,6 +4,7 @@ import { Context } from "../store/appContext";
 import ReactBootstrap, { Dropdown, DropdownButton, Form, FormControl, Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
 import { JobViewC } from "./../component/jobViewC";
+import { PaginationC } from "../component/pagination";
 
 export const JobView = () => {
 	return (
@@ -21,6 +22,9 @@ export const JobView = () => {
 			</div>
 			<div className="jobView-container d-flex justify-content-center ">
 				<JobViewC />
+			</div>
+			<div className="jobView-pagination d-flex justify-content-center">
+				<PaginationC />
 			</div>
 		</div>
 	);
