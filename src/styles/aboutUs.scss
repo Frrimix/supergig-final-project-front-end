@@ -1,17 +1,21 @@
+.aboutUs-title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
 .aboutUs-header {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-}
-.aboutUs-title {
-    text-align: center;
 }
 .aboutUs-text {
     text-align: center;
 }
 .aboutUs-creators-title {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 .aboutUs-creators-photos {
     max-width: 70%;
@@ -29,4 +33,31 @@
 .aboutUs-creator-three-img {
     height: 300px;
     width: auto;
+}
+.aboutUs-creator-one-name {
+   text-align: center;
+}
+.aboutUs-creator-two-name {
+   text-align: center;
+}
+.aboutUs-creator-three-name {
+   text-align: center;
+}
+.aboutUs-creator-one-description {
+    text-align: center;
+    max-width: 300px;
+}
+.aboutUs-creator-two-description {
+    text-align: center;
+    max-width: 300px;
+}
+.aboutUs-creator-three-description {
+    text-align: center;
+    max-width: 300px;
+}
+.aboutUs-company-logo-container {
+    margin-top: 3rem;
+}
+.aboutUs-company-logo {
+    max-height: 75px;
 }
