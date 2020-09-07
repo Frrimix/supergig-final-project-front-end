@@ -16,6 +16,7 @@ import { JobPosting } from "./views/jobPosting";
 // Importing components*/
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Terms } from "./views/terms";
 
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -60,6 +61,10 @@ const Layout = () => {
 							{/* The route below takes you to job posting */}
 							<Route exact path="/job-posting">
 								<JobPosting />
+							</Route>
+							{/* The route below takes you to terms and conditions*/}
+							<Route exact path="/terms">
+								<Terms />
 							</Route>
 							{/* The route below takes you to not found */}
 							<Route>

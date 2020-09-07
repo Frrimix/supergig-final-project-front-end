@@ -18,7 +18,6 @@ export const Footer = () => (
 								About Us
 							</a>
 						</li>
-						<li>Contact Us</li>
 						<li>
 							<a
 								className="footer-link"
@@ -26,6 +25,11 @@ export const Footer = () => (
 								rel="noopener noreferrer"
 								target="_blank">
 								Repository
+							</a>
+						</li>
+						<li>
+							<a className="footer-terms" href="/terms">
+								<p>Terms Of Service</p>
 							</a>
 						</li>
 					</ul>
@@ -86,9 +90,7 @@ export const Footer = () => (
 			</div>
 			<hr />
 			<div className="row">
-				<p className="col-sm">
-					&copy;{new Date().getFullYear()} SuperGig Inc. | All Rights Reserved | Terms Of Service | Privacy
-				</p>
+				<p className="col-sm">&copy;{new Date().getFullYear()} SuperGig Inc. | All Rights Reserved</p>
 			</div>
 		</div>
 	</footer>
