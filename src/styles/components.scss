@@ -132,10 +132,23 @@
     margin-top: 6rem;
 }
 
-// Job View feComponent
+// Job View Component
 .jobViewCard{
     box-shadow: 5px 5px 15px #888888;
 }
 .card-footer {
     margin-bottom: 30px;
 }
+
+//Pagination Component
+.page-link {
+    color: #38B553;
+}
+.page-link:hover {
+    color: #38B553;
+}
+.page-item.active .page-link {
+    background-color: #38B553;
+    border-color: #38B553;
+}
+
