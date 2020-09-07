@@ -112,6 +112,52 @@ export const Terms = () => {
 				the linking partys site. No use of SuperGigs logo or other artwork will be allowed for linking absent a
 				trademark license agreement.
 			</p>
+			<hr />
+			<p className="terms-liability">
+				<h2>Content Liability</h2>
+				We shall not be hold responsible for any content that appears on your Website. You agree to protect and
+				defend us against all claims that is rising on your Website. No link(s) should appear on any Website
+				that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or
+				advocates the infringement or other violation of, any third party rights.
+			</p>
+			<hr />
+			<p className="terms-reservation">
+				<h2>Reservation Of Rights</h2>
+				We reserve the right to request that you remove all links or any particular link to our Website. You
+				approve to immediately remove all links to our Website upon request. We also reserve the right to amen
+				these terms and conditions and it’s linking policy at any time. By continuously linking to our Website,
+				you agree to be bound to and follow these linking terms and conditions.
+			</p>
+			<hr />
+			<p className="terms-disclaimer">
+				<h2>Disclaimer</h2>
+				To the maximum extent permitted by applicable law, we exclude all representations, warranties and
+				conditions relating to our website and the use of this website. Nothing in this disclaimer will:
+				<br />
+				<br />
+				<ul>
+					<li>
+						Limit or exclude our or your liability for death or personal injury; limit or exclude our or
+						your liability for fraud or fraudulent misrepresentation;{" "}
+					</li>
+					<li>
+						Limit any of our or your liabilities in any way that is not permitted under applicable law; or
+						exclude any of our or your liabilities that may not be excluded under applicable law.
+					</li>
+				</ul>
+				The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer:
+				<br />
+				<br />
+				<ul>
+					<li>(a) are subject to the preceding paragraph; </li>
+					<li>
+						(b) and govern all liabilities arising under the disclaimer, including liabilities arising in
+						contract, in tort and for breach of statutory duty.
+					</li>
+				</ul>
+				As long as the website and the information and services on the website are provided free of charge, we
+				will not be liable for any loss or damage of any nature.
+			</p>
 			<div className="aboutUs-company-logo-container d-flex justify-content-center">
 				<img className="aboutUs-company-logo" src={companyLogo} href="#" />
 			</div>
