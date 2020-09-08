@@ -20,7 +20,7 @@ export const JobViewC = () => {
 						<Card.Text>Payment</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">Posted 3 mins ago</small>
 					</Card.Footer>
 				</Card>
 				{/* This is sample card two */}
@@ -32,7 +32,7 @@ export const JobViewC = () => {
 						<Card.Text>Payment</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">Posted 2 hours ago</small>
 					</Card.Footer>
 				</Card>
 				{/* This is sample card three */}
@@ -44,7 +44,7 @@ export const JobViewC = () => {
 						<Card.Text>Payment</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">Posted 2 days ago</small>
 					</Card.Footer>
 				</Card>
 			</CardGroup>
