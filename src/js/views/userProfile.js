@@ -11,7 +11,7 @@ export const UserProfile = () => {
 				{/* Profile photo */}
 				<img
 					className="userProfile-img"
-					src="https://www.cobdoglaps.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq.jpg"></img>
+					src="https://topdogplumberboise.com/wp-content/uploads/2016/07/top_dog_plumbing_vaughn_profile.jpg"></img>
 				<div className="userProfile-intro">
 					{/* Name */}
 					<h1 className="userProfile-name">John Smith</h1>
