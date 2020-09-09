@@ -44,11 +44,11 @@ export const UserProfile = () => {
 				</div>
 			</div>
 			<div className="userProfile-bottom-banner d-flex justify-content-center">
-				<i className="fab fa-linkedin-in userProfile-linkedin"></i>
-				<i className="fab fa-instagram userProfile-instagram"></i>
-				<i className="fab fa-facebook-square userProfile-facebook"></i>
-				<i className="fab fa-twitter userProfile-twitter"></i>
-				<i className="fab fa-google-plus-g userProfile-google"></i>
+				<a href="#" className="fab fa-linkedin-in userProfile-linkedin"></a>
+				<a href="#" className="fab fa-instagram userProfile-instagram"></a>
+				<a href="#" className="fab fa-facebook-square userProfile-facebook"></a>
+				<a href="#" className="fab fa-twitter userProfile-twitter"></a>
+				<a href="#" className="fab fa-google-plus-g userProfile-google"></a>
 			</div>
 			<p className="disclaimer">
 				This website contains copyrighted material the use of which has not always been specifically authorized
