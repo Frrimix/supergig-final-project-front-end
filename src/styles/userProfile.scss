@@ -1,12 +1,12 @@
 .userProfile-img {
-    max-width: 200px;
+    max-width: 250px;
     border: 1px solid grey;
-    padding: 1rem 2.5rem;
     border-radius: 50%;
+    margin-left: 20px;
 }
 
 .userProfile-intro {
-    margin-left: 25px;
+    margin-left: 5rem;
 }
 
 .userProfile-container {
@@ -14,8 +14,78 @@
     box-sizing: border-box;
     box-shadow: 5px 5px 15px #888888;
     max-width: 900px;
+    height: 450px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.userProfile-bottom-banner {
+    height: 75px;
+    background-color: #38B553;
+    max-width: 900px;
+    border: 1px solid #38B553;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userProfile-name {
+    font-size: 30pt;
+    margin-top: 0px!important;
+}
+
+.userProfile-about {
+    font-style: italic;
+}
+
+.userProfile-linkedin {
+    font-size: 45px;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.userProfile-instagram {
+    font-size: 45px;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.userProfile-facebook {
+    font-size: 45px;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.userProfile-twitter {
+    font-size: 45px;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.userProfile-google {
+    font-size: 45px;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.userProfile-strong {
+    margin-right: 20px;
+}
+
+.userProfile-hello-icon {
+    height: 75px;
 }
