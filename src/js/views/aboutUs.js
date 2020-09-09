@@ -31,11 +31,8 @@ export const AboutUs = () => {
 				{/* About us creators image, name, and description */}
 				{/* About us - creator #1*/}
 				<div className="aboutUs-creator-one">
-					<img
-						className="aboutUs-creator-one-img"
-						src="https://via.placeholder.com/500.png/09f/fff%20C/O%20https://placeholder.com/#How_To_Set_Custom_Text"
-					/>
-					<h5 className="aboutUs-creator-one-name">Sample Name 1</h5>
+					<img className="aboutUs-creator-one-img" src="https://i.imgur.com/FApdZxa.jpg" />
+					<h5 className="aboutUs-creator-one-name">Ernesto Milanes</h5>
 					<p className="aboutUs-creator-one-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
 						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
@@ -45,11 +42,8 @@ export const AboutUs = () => {
 				</div>
 				{/* About us - creator #2*/}
 				<div className="aboutUs-creator-two">
-					<img
-						className="aboutUs-creator-two-img"
-						src="https://via.placeholder.com/500.png/09f/fff%20C/O%20https://placeholder.com/#How_To_Set_Custom_Text"
-					/>
-					<h5 className="aboutUs-creator-two-name">Sample Name 2</h5>
+					<img className="aboutUs-creator-two-img" src="https://i.imgur.com/VRn80IA.jpg" />
+					<h5 className="aboutUs-creator-two-name">Paola Castro</h5>
 					<p className="aboutUs-creator-two-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
 						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
@@ -59,11 +53,8 @@ export const AboutUs = () => {
 				</div>
 				{/* About us - creator #3*/}
 				<div className="aboutUs-creator-three">
-					<img
-						className="aboutUs-creator-three-img"
-						src="https://via.placeholder.com/500.png/09f/fff%20C/O%20https://placeholder.com/#How_To_Set_Custom_Text"
-					/>
-					<h5 className="aboutUs-creator-three-name">Sample Name 3</h5>
+					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/ua8p0aG.jpg" />
+					<h5 className="aboutUs-creator-three-name">Fritzlet Jean Louis</h5>
 					<p className="aboutUs-creator-three-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
 						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
