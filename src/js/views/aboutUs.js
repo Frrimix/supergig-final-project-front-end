@@ -45,10 +45,12 @@ export const AboutUs = () => {
 					<img className="aboutUs-creator-two-img" src="https://i.imgur.com/VRn80IA.jpg" />
 					<h5 className="aboutUs-creator-two-name">Paola Castro</h5>
 					<p className="aboutUs-creator-two-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
-						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
-						sodales purus sit amet sapien ultrices varius. Integer maximus, purus non interdum sollicitudin,
-						tellus arcu malesuada nulla, sed elementum leo orci sed enim.
+						I am a mother of two, I studied Advertising and have worked in Marketing ever since. I became
+						interested in coding by seeing my brother and a dear friend once told me that if I knew Excel I
+						could learn. From that day the story changed because I Love Coding! It has cost me a lot of
+						work, time and sacrifices but I will not be done until I achieve it. For this, you must
+						constantly keep learning and practicing, the only thing you must do is believe in yourself. I
+						was the least technological person in the world and if I can anyone can.
 					</p>
 				</div>
 				{/* About us - creator #3*/}
