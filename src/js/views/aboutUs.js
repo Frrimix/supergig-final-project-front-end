@@ -46,11 +46,11 @@ export const AboutUs = () => {
 					<h5 className="aboutUs-creator-two-name">Paola Castro</h5>
 					<p className="aboutUs-creator-two-description">
 						I am a mother of two, I studied Advertising and have worked in Marketing ever since. I became
-						interested in coding by seeing my brother and a dear friend once told me that if I knew Excel I
-						could learn. From that day the story changed because I Love Coding! It has cost me a lot of
-						work, time and sacrifices but I will not be done until I achieve it. For this, you must
-						constantly keep learning and practicing, the only thing you must do is believe in yourself. I
-						was the least technological person in the world and if I can anyone can.
+						interested in coding by seeing my brother code. A dear friend once told me that if I knew Excel
+						I could learn. From that day the story changed, I now love coding! It has cost me a lot of work,
+						time, and sacrifices but I will not be content until I achieve my goal. For this, I must
+						constantly keep learning and practicing, the only thing I must do is believe in myself. I was
+						the least technological person in the world so if I can do it anyone can.
 					</p>
 				</div>
 				{/* About us - creator #3*/}
