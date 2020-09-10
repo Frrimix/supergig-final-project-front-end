@@ -39,12 +39,10 @@ export const LogInForm = () => {
 						Submit
 					</Button>
 				</Form>
+				<Link to={"/create-account"} href="#">
+					<a className="jobView-return ">Create an account</a>
+				</Link>
 			</div>
-
-			{/* Create Account Link */}
-			<Link to={"/create-account"} href="#">
-				<a className="logInForm-create-account">Create an account</a>
-			</Link>
 		</div>
 	);
 };

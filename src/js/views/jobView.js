@@ -1,15 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import ReactBootstrap, { Dropdown, DropdownButton, Form, FormControl, Button } from "react-bootstrap";
+import ReactBootstrap, { Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
-import { JobFeedC } from "./../component/jobFeedC";
-import { PaginationC } from "../component/pagination";
 
 export const JobView = () => {
 	return (
-		<div className="jobView-wrapper">
-			<p>This is the single-job view</p>
+		<div className="jobView-container">
+			<div className="jobView-wrapper">
+				<h1 className="jobView-title">Need help with a leaky faucet</h1>
+				<hr />
+				<p className="jobView-description">
+					The faucet on my kitchen has been leaking for the past few days. My husband has tried tightening all
+					the bolts and screws he could find but no avail. We recently moved into this home and do not have
+					any money to hire a professional plumber. If anybody has plumbing experience and can do this job for
+					$100 I would appreciate it. We would buy all necessary parts.
+				</p>
+				<p className="jobView-address">1102 SW 105 Ave, Miami, FL 33174</p>
+			</div>
+
+			<Link to={"/jobs"} href="#">
+				<a className="jobView-return">Return to jobs</a>
+			</Link>
 		</div>
 	);
 };
