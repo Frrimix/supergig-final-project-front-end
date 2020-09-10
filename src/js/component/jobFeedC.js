@@ -7,13 +7,13 @@ import companyLogo from "../../img/supergig-logo.png";
 // Importing styles*/
 import "../../styles/components.scss";
 
-export const JobViewC = () => {
+export const JobFeedC = () => {
 	return (
-		<div className="jobView-container">
+		<div className="jobFeed-container">
 			<CardGroup>
 				{/* This is sample card one */}
 				<Card>
-					<Card.Body className="jobViewCard">
+					<Card.Body className="jobFeedCard">
 						<Card.Title>Need help cutting my grass</Card.Title>
 						<Card.Text>
 							In need of help cutting my grass. Worker should have tools required to cut a medium-sized
@@ -28,7 +28,7 @@ export const JobViewC = () => {
 				</Card>
 				{/* This is sample card two */}
 				<Card>
-					<Card.Body className="jobViewCard">
+					<Card.Body className="jobFeedCard">
 						<Card.Title>Need help with a leaky faucet</Card.Title>
 						<Card.Text>
 							The faucet on my kitchen has been leaking for the past few days. My husband has tried
@@ -45,7 +45,7 @@ export const JobViewC = () => {
 				</Card>
 				{/* This is sample card three */}
 				<Card>
-					<Card.Body className="jobViewCard">
+					<Card.Body className="jobFeedCard">
 						<Card.Title>Need help cleaning my home</Card.Title>
 						<Card.Text>
 							I was recently involved in a motor-vehicle accident. I injured by left shoulder and lower
