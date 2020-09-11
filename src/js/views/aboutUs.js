@@ -42,10 +42,13 @@ export const AboutUs = () => {
 					<img className="aboutUs-creator-one-img" src="https://i.imgur.com/ua8p0aG.jpg" />
 					<h5 className="aboutUs-creator-one-name">Fritzlet Jean Louis</h5>
 					<p className="aboutUs-creator-one-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
-						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
-						sodales purus sit amet sapien ultrices varius. Integer maximus, purus non interdum sollicitudin,
-						tellus arcu malesuada nulla, sed elementum leo orci sed enim.
+						I am the CEO of Frimix Productions. In March 2011 I Founded SOJEPROD’H with help of family and
+						friends. I study civil engineering at RUBEN LECONTE UNIVERSITY, I toke several training in field
+						like Diplomacy and International relations at Pacific International University, School
+						Administration at Saint Ignace. Dynamic of Supervision, Communication and Conflict Resolution
+						Strategies, Local and Community Development at IFC. I study Computer System and Information
+						Technology at Lindsey Hopkins Technical College. Recognizing the power of Web development to
+						change the world, I see myself as a web developer to be part of the world changing.
 					</p>
 				</div>
 				{/* About us - creator #2*/}
