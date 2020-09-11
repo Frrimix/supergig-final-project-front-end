@@ -15,7 +15,7 @@ export const AboutUs = () => {
 				<p className="aboutUs-text">
 					<span style={{ color: "#38B553" }}>SuperGig</span> started as an idea by a group of Web Developers.
 					We were all a part of a coding bootcamp during the summer of 2020. We are a group of different
-					people with the same common purpose #LearnToCode. Together we collaborate to make this Project a
+					people with the same common purpose #LearnToCode. Together we collaborated to make this Project a
 					reality. As you may know COVID-19 was rampant during this time of the year. Many of us had friends
 					and/or family members lose their jobs due to the pandemic.
 					<br />
