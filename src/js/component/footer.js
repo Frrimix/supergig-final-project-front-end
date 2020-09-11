@@ -62,7 +62,7 @@ export const Footer = () => (
 							</a>
 						</li>
 						<li>
-							<a className="footer-link" href="/job-view">
+							<a className="footer-link" href="/jobs">
 								View Jobs
 							</a>
 						</li>
