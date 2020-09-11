@@ -43,12 +43,12 @@ export const AboutUs = () => {
 					<h5 className="aboutUs-creator-one-name">Fritzlet Jean Louis</h5>
 					<p className="aboutUs-creator-one-description">
 						I am the CEO of Frimix Productions. In March 2011 I Founded SOJEPROD’H with help of family and
-						friends. I study civil engineering at RUBEN LECONTE UNIVERSITY, I toke several training in field
-						like Diplomacy and International relations at Pacific International University, School
+						friends. I study civil engineering at Ruben Leconte University, I underwent training in field
+						like Diplomacy and International Relations at Pacific International University, School of
 						Administration at Saint Ignace. Dynamic of Supervision, Communication and Conflict Resolution
-						Strategies, Local and Community Development at IFC. I study Computer System and Information
-						Technology at Lindsey Hopkins Technical College. Recognizing the power of Web development to
-						change the world, I see myself as a web developer to be part of the world changing.
+						Strategies, Local and Community Development at IFC. I studied Computer System and Information
+						Technology at Lindsey Hopkins Technical College. I Recognized the power of Web development in
+						changing the world, I see myself as a web developer and want to be part of the changing world.
 					</p>
 				</div>
 				{/* About us - creator #2*/}
