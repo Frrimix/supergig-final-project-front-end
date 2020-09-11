@@ -13,16 +13,24 @@ export const AboutUs = () => {
 			<div className="aboutUs-header d-flex justify-content-center">
 				{/* About us description */}
 				<p className="aboutUs-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus ornare
-					diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque sodales purus
-					sit amet sapien ultrices varius. Integer maximus, purus non interdum sollicitudin, tellus arcu
-					malesuada nulla, sed elementum leo orci sed enim. Sed scelerisque tincidunt metus. Nam sit amet ante
-					at dolor bibendum tempor a ut dolor. Nullam non neque accumsan, egestas justo vitae, eleifend sem.
-					Proin id ipsum leo. Proin eget purus et justo dictum dapibus a eu mauris. Morbi luctus, sapien vitae
-					sagittis pellentesque, turpis purus egestas diam, quis dapibus enim tellus sit amet justo. Donec
-					ornare maximus turpis, in tincidunt metus hendrerit et. Mauris ullamcorper tortor turpis, sit amet
-					sollicitudin lacus rhoncus a. Quisque posuere ligula nec elementum pretium. Interdum et malesuada
-					fames ac ante ipsum primis in faucibus.
+					<span style={{ color: "#38B553" }}>SuperGig</span> started as an idea by a group of Web Developers.
+					We were all a part of a coding bootcamp during the summer of 2020. We are a group of different
+					people with the same common purpose #LearnToCode. Together we collaborate to make this Project a
+					reality. As you may know COVID-19 was rampant during this time of the year. Many of us had friends
+					and/or family members lose their jobs due to the pandemic.
+					<br />
+					<br />
+					This fueled our idea and drove us to create a web-app where anyone could log-in, post short-terms
+					jobs that they needed assistance with. Also, those looking for jobs, after being pre-qualified,
+					could post their job-skills, offer their services to the public, and be hired by anyone who may need
+					such service. This theory seemed to work great because many members of the community are struggling
+					during these times, any small job that they can complete will benefit themselves as well as their
+					family. Also, many community-members might not have the funds to hire a company that will
+					potentially charge hundreds of dollars for a simple job which their neighbor could possibly do for
+					less.
+					<br />
+					<br />
+					<span style={{ color: "#38B553" }}>SuperGig</span> is from the community and for the community.
 				</p>
 			</div>
 			{/* About us creators title */}
@@ -31,8 +39,8 @@ export const AboutUs = () => {
 				{/* About us creators image, name, and description */}
 				{/* About us - creator #1*/}
 				<div className="aboutUs-creator-one">
-					<img className="aboutUs-creator-one-img" src="https://i.imgur.com/FApdZxa.jpg" />
-					<h5 className="aboutUs-creator-one-name">Ernesto Milanes</h5>
+					<img className="aboutUs-creator-one-img" src="https://i.imgur.com/ua8p0aG.jpg" />
+					<h5 className="aboutUs-creator-one-name">Fritzlet Jean Louis</h5>
 					<p className="aboutUs-creator-one-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
 						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
@@ -55,8 +63,8 @@ export const AboutUs = () => {
 				</div>
 				{/* About us - creator #3*/}
 				<div className="aboutUs-creator-three">
-					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/ua8p0aG.jpg" />
-					<h5 className="aboutUs-creator-three-name">Fritzlet Jean Louis</h5>
+					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/FApdZxa.jpg " />
+					<h5 className="aboutUs-creator-three-name">Ernesto Milanes</h5>
 					<p className="aboutUs-creator-three-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
 						ornare diam mattis vel. Maecenas imperdiet vulputate sem, ac luctus neque commodo in. Quisque
