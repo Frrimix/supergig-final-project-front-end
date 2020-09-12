@@ -1,4 +1,4 @@
-const url = "https://3000-f14d7ffd-dd58-412b-b623-a3ac36359ebf.ws-us02.gitpod.io/";
+const url = "https://3000-e4f0eb0e-235d-4a09-b8fc-a12b2214090c.ws-us02.gitpod.io/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -51,6 +51,34 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}).then(() => {
 					getActions().getUser();
 				});
+			},
+
+			// Create a job function
+			createJob: job => {
+				const store = getStore();
+				const actions = getActions();
+				if (store.currentUser === null) {
+					alert("You are not logged in");
+					return;
+				}
+				fetch(url + "job-posting/", {
+					method: "POST",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						job: job,
+						user_id: store.currentUser.id
+					})
+				})
+					.then(resp => {
+						if (resp.status === 200) {
+							getActions().getJob();
+							actions.getEmail();
+						} else alert("There was an error sumbiting the job");
+					})
+					.catch(error => {
+						alert("There was an error sumbiting the job");
+						console.log(error);
+					});
 			}
 			//reset the global store
 			// setStore({ demo: demo })
