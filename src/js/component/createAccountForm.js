@@ -37,9 +37,16 @@ export const CreateAccountForm = () => {
 							<Form.Label>Email</Form.Label>
 							<Form.Control type="email" placeholder="Enter email" />
 						</Form.Group>
+					</Form.Row>
 
+					<Form.Row>
 						<Form.Group as={Col} controlId="formGridPassword">
 							<Form.Label>Password</Form.Label>
+							<Form.Control type="password" placeholder="Password" />
+						</Form.Group>
+
+						<Form.Group as={Col} controlId="formGridConfirmPassword">
+							<Form.Label>Confirm your Password</Form.Label>
 							<Form.Control type="password" placeholder="Password" />
 						</Form.Group>
 					</Form.Row>
