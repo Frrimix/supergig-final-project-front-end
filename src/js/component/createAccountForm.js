@@ -46,7 +46,7 @@ export const CreateAccountForm = () => {
 						</Form.Group>
 
 						<Form.Group as={Col} controlId="formGridConfirmPassword">
-							<Form.Label>Confirm your Password</Form.Label>
+							<Form.Label>Confirm Password</Form.Label>
 							<Form.Control type="password" placeholder="Password" />
 						</Form.Group>
 					</Form.Row>
