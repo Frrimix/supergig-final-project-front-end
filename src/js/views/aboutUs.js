@@ -66,7 +66,7 @@ export const AboutUs = () => {
 				</div>
 				{/* About us - creator #3*/}
 				<div className="aboutUs-creator-three">
-					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/FApdZxa.jpg " />
+					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/YdCSEBA.jpg" />
 					<h5 className="aboutUs-creator-three-name">Ernesto Milanes</h5>
 					<p className="aboutUs-creator-three-description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor blandit enim, dapibus
