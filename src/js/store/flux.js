@@ -14,7 +14,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			// Log-in function
-			login: (test_email, test_password, history) => {
+			login: (email, password, history) => {
 				fetch(url + "login/", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
