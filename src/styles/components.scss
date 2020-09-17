@@ -102,8 +102,11 @@
 .form-check {
     padding-top: 1rem;
 }
-.logInForm-forgotPassword {
+.logInForm-forgotPassword:hover {
     color: #38B553;
+}
+.logInForm-forgotPassword {
+    color: black;
 }
 
 
