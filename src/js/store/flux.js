@@ -13,7 +13,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ token: null });
 			},
 
-			// Logi-in function
+			// Log-in function
 			login: (test_email, test_password, history) => {
 				fetch(url + "login/", {
 					method: "POST",
@@ -45,6 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						last_nam: last_nam,
 						password: password,
 						address: address,
+						sex: sex,
 						zipcode: zipcode,
 						type_of_user: "user"
 					})
@@ -78,6 +79,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(error => {
 						alert("There was an error sumbiting the job");
 						console.log(error);
+					});
+			},
+
+			// Get a job function
+			getJob: () => {
+				fetch(url + "job-post/")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting job", result), setStore({ job: result });
 					});
 			}
 			//reset the global store
