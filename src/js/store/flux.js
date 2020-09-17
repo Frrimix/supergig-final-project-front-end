@@ -19,8 +19,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({
-						email: test_email,
-						password: test_password
+						email: email,
+						password: password
 					})
 				})
 					.then(response => {
@@ -42,12 +42,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 					body: JSON.stringify({
 						email: email,
 						first_name: first_name,
-						last_nam: last_nam,
+						last_name: last_name,
 						password: password,
 						address: address,
 						sex: sex,
 						zipcode: zipcode,
-						type_of_user: "user"
+						type_of_user: type_of_user
 					})
 				}).then(() => {
 					getActions().getUser();
