@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import PropTypes from "prop-types";
+import { Context } from "../store/appContext";
 import ReactBootstrap, { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
@@ -9,7 +11,10 @@ import { LogIn } from "../views/logIn";
 // Importing styles*/
 import "../../styles/components.scss";
 
-export const LogInForm = () => {
+export const LogInForm = props => {
+	const { store, actions } = useContext(Context);
+	const [email, setEmail] = useState();
+	const [password, setPassword] = useState();
 	return (
 		<div className="logInForm-container">
 			{/* Image container - L hand side */}
@@ -21,6 +26,7 @@ export const LogInForm = () => {
 					<br />
 					<Form.Group controlId="formBasicEmail">
 						<Form.Label>Email address</Form.Label>
+
 						<Form.Control type="email" placeholder="Enter email" />
 						<Form.Text className="text-muted">Well never share your email with anyone else.</Form.Text>
 					</Form.Group>
