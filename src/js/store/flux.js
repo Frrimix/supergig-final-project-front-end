@@ -1,4 +1,4 @@
-const url = "https://3000-e4f0eb0e-235d-4a09-b8fc-a12b2214090c.ws-us02.gitpod.io/";
+const url = "https://3000-cb178d73-701c-4c7b-9bfd-482fe967d636.ws-us02.gitpod.io/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -88,6 +88,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(res => res.json())
 					.then(result => {
 						console.log("getting job", result), setStore({ job: result });
+					});
+			},
+			// Get a user function
+			getUser: () => {
+				fetch(url + "user/")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting user", result), setStore({ job: result });
 					});
 			}
 			//reset the global store
