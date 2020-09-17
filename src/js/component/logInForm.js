@@ -26,14 +26,26 @@ export const LogInForm = props => {
 					<br />
 					<Form.Group controlId="formBasicEmail">
 						<Form.Label>Email address</Form.Label>
-
-						<Form.Control type="email" placeholder="Enter email" />
+						<Form.Control
+							onChange={e => setEmail(e.target.value)}
+							className="form-control"
+							id="exampleInputEmail1"
+							aria-describedby="emailHelp"
+							type="email"
+							placeholder="Enter email"
+						/>
 						<Form.Text className="text-muted">Well never share your email with anyone else.</Form.Text>
 					</Form.Group>
 
 					<Form.Group controlId="formBasicPassword">
 						<Form.Label>Password</Form.Label>
-						<Form.Control type="password" placeholder="Password" />
+						<Form.Control
+							onChange={e => setPassword(e.target.value)}
+							type="password"
+							className="form-control"
+							id="exampleInputPassword1"
+							placeholder="Password"
+						/>
 					</Form.Group>
 					<a className="logInForm-forgotPassword" href="#">
 						Forgot Password
@@ -41,7 +53,12 @@ export const LogInForm = props => {
 					<Form.Group controlId="formBasicCheckbox">
 						<Form.Check type="checkbox" label="Remember Me" />
 					</Form.Group>
-					<Button className="submit-button" variant="primary" type="submit">
+					<Button
+						to={"/user-profile"}
+						className="submit-button"
+						variant="primary"
+						type="submit"
+						onClick={() => actions.login(email, password)}>
 						Submit
 					</Button>
 				</Form>
