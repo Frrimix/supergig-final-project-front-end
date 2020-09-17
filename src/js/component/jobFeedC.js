@@ -4,6 +4,9 @@ import { render } from "react-dom";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
 
+// Importing views*/
+import { LogIn } from "../views/jobFeed";
+
 // Importing styles*/
 import "../../styles/components.scss";
 

@@ -7,6 +7,9 @@ import companyLogo from "../../img/supergig-logo.png";
 // Importing styles*/
 import "../../styles/components.scss";
 
+// Importing views*/
+import { LogIn } from "../views/jobFeed";
+
 export const PaginationC = () => {
 	return (
 		<div className="pagination-container">
