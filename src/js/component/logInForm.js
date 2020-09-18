@@ -4,7 +4,7 @@ import { Context } from "../store/appContext";
 import ReactBootstrap, { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
-
+import { useHistory } from "react-router-dom";
 // Importing views*/
 import { LogIn } from "../views/logIn";
 
@@ -12,16 +12,33 @@ import { LogIn } from "../views/logIn";
 import "../../styles/components.scss";
 
 export const LogInForm = props => {
+	let history = useHistory();
+
 	const { store, actions } = useContext(Context);
 	const [email, setEmail] = useState();
 	const [password, setPassword] = useState();
+
+	async function handleSubmit(e) {
+		e.preventDefault();
+		if (email !== "" && password !== "") {
+			let resp = await actions.login(email, password);
+			console.log(resp);
+
+			if (resp) {
+				history.push("/user-profile");
+			} else {
+				console.log("signin failed");
+			}
+		}
+	}
+
 	return (
 		<div className="logInForm-container">
 			{/* Image container - L hand side */}
 			<div className="logIn-second-container d-flex justify-content-around">
 				<img className="logInForm-img" src="https://i.imgur.com/Zvp3ZAV.jpg" />
 				{/* Log-in Form - R hand side */}
-				<Form>
+				<Form onSubmit={handleSubmit}>
 					<h1 className="d-flex justify-content-center">Log-In</h1>
 					<br />
 					<Form.Group controlId="formBasicEmail">
@@ -53,12 +70,7 @@ export const LogInForm = props => {
 					<Form.Group controlId="formBasicCheckbox">
 						<Form.Check type="checkbox" label="Remember Me" />
 					</Form.Group>
-					<Button
-						to={"/user-profile"}
-						className="submit-button"
-						variant="primary"
-						type="submit"
-						onClick={() => actions.login(email, password)}>
+					<Button className="submit-button" variant="primary" type="submit">
 						Submit
 					</Button>
 				</Form>

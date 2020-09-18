@@ -4,7 +4,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			token: null,
-			currentUser: null
+			currentUser: [],
+			jwt: [],
+			email: [],
+			users: [],
+			job: []
 		},
 
 		actions: {
@@ -14,8 +18,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			// Log-in function
-			login: (email, password, history) => {
-				fetch(url + "login/", {
+			login: (email, password) => {
+				return fetch(url + "login/", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({
@@ -24,13 +28,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 				})
 					.then(response => {
-						if (response.status === 200) return response.json();
-						alert("Username or password does not match any");
-						throw Error('"Username or password does not match any"');
+						if (!response.ok) {
+							throw new Error(response.statusText);
+						}
+
+						return response.json();
 					})
 					.then(data => {
+						console.log(data);
+						// if(data.responseCode!==200) throw new Error(data.message)
 						setStore({ token: data.jwt, currentUser: data.user });
-						history.push("user-profile/");
+						return true;
+					})
+					.catch(err => {
+						console.error(err);
+						return false;
 					});
 			},
 
