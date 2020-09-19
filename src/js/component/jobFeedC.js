@@ -25,8 +25,17 @@ export const JobFeedC = () => {
 								<Card.Body className="jobFeedCard .stretched-link" href="#">
 									<Card.Title>{e.job_title}</Card.Title>
 									<Card.Text>{e.job_description}</Card.Text>
-									<Card.Text>{e.job_address}</Card.Text>
-									<Card.Text>{e.job_zipcode}</Card.Text>
+									<Card.Text>
+										<p>
+											{e.job_address}
+											&nbsp;
+											{e.job_city}, &nbsp;
+											{e.job_zipcode}
+										</p>
+									</Card.Text>
+									<Card.Text>
+										<strong>Payment $:{e.job_payment}</strong>
+									</Card.Text>
 								</Card.Body>
 							</a>
 							<Card.Footer>

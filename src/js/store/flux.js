@@ -1,4 +1,4 @@
-const url = "https://3000-a84b363a-f829-4f23-b398-39a1cf133ba2.ws-us02.gitpod.io/";
+const url = "https://3000-fd226ae2-33ac-4bf0-9139-0387bd681462.ws-us02.gitpod.io/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -79,19 +79,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 					headers: { "Content-type": "application/json" },
 					body: JSON.stringify({
 						job: job,
-						user_id: store.currentUser.id
+						user_id: store.currentUser.id,
+						job_title: job_title,
+						job_description: job_description,
+						job_address: job_address,
+						job_state: job_state,
+						job_city: job_citys,
+						job_zipcode: job_zipcode,
+						job_payment: job_payment
 					})
-				})
-					.then(resp => {
-						if (resp.status === 200) {
-							getActions().getJob();
-							actions.getEmail();
-						} else alert("There was an error sumbiting the job");
-					})
-					.catch(error => {
-						alert("There was an error sumbiting the job");
-						console.log(error);
-					});
+				}).then(() => {
+					getActions().getUser();
+				});
 			},
 
 			// Get a job function

@@ -29,6 +29,13 @@ export const JobPostingForm = () => {
 						<Form.Control as="textarea" rows="7" placeholder="Job Description" />
 					</Form.Group>
 
+					<Form.Row>
+						<Form.Group as={Col} controlId="formGridPayment">
+							<Form.Label>Payment $</Form.Label>
+							<Form.Control placeholder="100" />
+						</Form.Group>
+					</Form.Row>
+
 					<Form.Group controlId="formGridAddress1">
 						<Form.Label> Job Address</Form.Label>
 						<Form.Control placeholder="1234 Main St" />
