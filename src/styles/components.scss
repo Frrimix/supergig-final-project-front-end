@@ -117,12 +117,13 @@
     box-sizing: border-box;
     box-shadow: 5px 5px 15px #888888;
     max-height: 700px;
-    max-width: 1000px;
+    max-width: 1200px;
     padding-right: 40px;
 }
 .createAccountForm-img {
-    height: 350px;
+    width: 600px;
     margin-top: 5%;
+    padding-right: 30px;
 }
 .createAcountForm-Login {
     margin-left: 25%;
@@ -153,10 +154,10 @@
 // Job View Component
 .jobFeedCard{
     box-shadow: 5px 5px 15px #888888;
-    max-width: 550px!important;
+    max-width: 700px!important;
 }
 .jobFeed-job-card {
-    width: 550px!important;
+    width: 700px!important;
 }
 .card-block {
     color: black;
