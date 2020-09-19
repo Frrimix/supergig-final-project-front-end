@@ -21,6 +21,7 @@ export const CreateAccountForm = props => {
 	const [password, setPassword] = useState("");
 	const [address, setAddress] = useState("");
 	const [zipcode, setZipcode] = useState("");
+	const [sex, setSex] = useState("");
 	const [type_of_user, setType_of_user] = useState("");
 
 	return (
@@ -104,7 +105,7 @@ export const CreateAccountForm = props => {
 
 						<Form.Group as={Col} controlId="formGridState">
 							<Form.Label>Sex</Form.Label>
-							<Form.Control as="select" defaultValue="Choose...">
+							<Form.Control onChange={e => setSex(e.target.value)} as="select" defaultValue="Choose...">
 								<option>Choose...</option>
 								<option value="1">Male</option>
 								<option value="2">Female</option>
