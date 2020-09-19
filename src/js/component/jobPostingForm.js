@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ReactBootstrap, { Form, Button, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { Link, useHistory } from "react-router-dom";
+import { Context } from "../store/appContext";
 import companyLogo from "../../img/supergig-logo.png";
 
 // Importing views*/
@@ -10,6 +12,39 @@ import { jobPostingForm } from "../views/jobPosting";
 import "../../styles/components.scss";
 
 export const JobPostingForm = () => {
+	let history = useHistory();
+
+	const { store, actions } = useContext(Context);
+	const [job_title, setJob_title] = useState("");
+	const [job_description, setJob_description] = useState("");
+	const [job_address, setJob_address] = useState("");
+	const [job_state, setJob_state] = useState("");
+	const [job_city, setJob_city] = useState("");
+	const [job_zipcode, setJob_zipcode] = useState("");
+	const [job_payment, setJob_payment] = useState("");
+
+	async function handleSubmit(e) {
+		e.preventDefault();
+		if (
+			job_title !== "" &&
+			job_description !== "" &&
+			job_address !== "" &&
+			job_state !== "" &&
+			job_city !== "" &&
+			job_zipcode !== "" &&
+			job_payment !== ""
+		) {
+			let resp = await actions.addJob(email, password);
+			console.log(resp);
+
+			if (resp) {
+				history.push("/user-profile");
+			} else {
+				console.log("signin failed");
+			}
+		}
+	}
+
 	return (
 		<div className="jobPostingForm-container">
 			{/* Image container - L hand side */}
@@ -21,35 +56,60 @@ export const JobPostingForm = () => {
 					<h1 className="d-flex justify-content-center">Job Posting</h1>
 					<Form.Group controlId="formGridTitle">
 						<Form.Label>Job Title</Form.Label>
-						<Form.Control placeholder="Job Title" />
+						<Form.Control
+							defaultValue={job_title}
+							onChange={e => setJob_title(e.target.value)}
+							placeholder="Job Title"
+						/>
 					</Form.Group>
 
 					<Form.Group className="jobDescriptionInput" controlId="formGridDesciption">
 						<Form.Label>Job Description</Form.Label>
-						<Form.Control as="textarea" rows="7" placeholder="Job Description" />
+						<Form.Control
+							defaultValue={job_description}
+							onChange={e => setJob_description(e.target.value)}
+							as="textarea"
+							rows="7"
+							placeholder="Job Description"
+						/>
 					</Form.Group>
 
 					<Form.Row>
 						<Form.Group as={Col} controlId="formGridPayment">
 							<Form.Label>Payment $</Form.Label>
-							<Form.Control placeholder="100" />
+							<Form.Control
+								defaultValue={job_payment}
+								onChange={e => setJob_payment(e.target.value)}
+								placeholder="100"
+							/>
 						</Form.Group>
 					</Form.Row>
 
 					<Form.Group controlId="formGridAddress1">
 						<Form.Label> Job Address</Form.Label>
-						<Form.Control placeholder="1234 Main St" />
+						<Form.Control
+							defaultValue={job_address}
+							onChange={e => setJob_address(e.target.value)}
+							placeholder="1234 Main St"
+						/>
 					</Form.Group>
 
 					<Form.Row>
 						<Form.Group as={Col} controlId="formGridCity">
 							<Form.Label>City</Form.Label>
-							<Form.Control placeholder="Miami" />
+							<Form.Control
+								defaultValue={job_city}
+								onChange={e => setJob_city(e.target.value)}
+								placeholder="Miami"
+							/>
 						</Form.Group>
 
 						<Form.Group as={Col} controlId="formGridState">
 							<Form.Label>State</Form.Label>
-							<Form.Control as="select" defaultValue="Choose...">
+							<Form.Control
+								onChange={e => setJob_state(e.target.value)}
+								as="select"
+								defaultValue="Choose...">
 								<option>Choose...</option>
 								<option value="1">Alabama</option>
 								<option value="2">Alaska</option>
@@ -106,11 +166,30 @@ export const JobPostingForm = () => {
 
 						<Form.Group as={Col} controlId="formGridZip">
 							<Form.Label>Zip</Form.Label>
-							<Form.Control placeholder="33174" />
+							<Form.Control
+								defaultValue={job_zipcode}
+								onChange={e => setJob_zipcode(e.target.value)}
+								placeholder="33174"
+							/>
 						</Form.Group>
 					</Form.Row>
 
-					<Button className="submit-button" variant="primary" type="submit">
+					<Button
+						className="submit-button"
+						variant="primary"
+						type="submit"
+						onClick={() => {
+							actions.addJob(
+								job_title,
+								job_description,
+								job_payment,
+								job_address,
+								job_city,
+								job_state,
+								job_zipcode
+							);
+							alert("Job has been posted");
+						}}>
 						Submit
 					</Button>
 				</Form>

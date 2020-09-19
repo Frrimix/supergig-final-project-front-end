@@ -93,7 +93,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 			},
 
-			// Get a job function
+			// Get all jobs function
 			getJob: () => {
 				fetch(url + "job-post/")
 					.then(res => res.json())
@@ -101,12 +101,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("getting job", result), setStore({ job: result });
 					});
 			},
+			// Get a single job function
+			getSingleJob: () => {
+				fetch(url + "/job_post/<int:job_post_id>")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting single job", result), setStore({ job: result });
+					});
+			},
 			// Get a user function
 			getUser: () => {
 				fetch(url + "user/")
 					.then(res => res.json())
 					.then(result => {
-						console.log("getting user", result), setStore({ job: result });
+						console.log("getting user", result), setStore({ user: result });
 					});
 			}
 			//reset the global store
