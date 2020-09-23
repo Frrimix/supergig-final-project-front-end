@@ -65,7 +65,7 @@ export const AboutUs = () => {
 					</p>
 				</div>
 				{/* About us - creator #3*/}
-				<div className="aboutUs-creator-three">
+				{/* <div className="aboutUs-creator-three">
 					<img className="aboutUs-creator-three-img" src="https://i.imgur.com/YdCSEBA.jpg" />
 					<h5 className="aboutUs-creator-three-name">Ernesto Milanes</h5>
 					<p className="aboutUs-creator-three-description">
@@ -76,7 +76,7 @@ export const AboutUs = () => {
 						individuals who were also persuing a career in web development and realized the growth and
 						potential of the industry. I know now this is what I want to do.
 					</p>
-				</div>
+				</div> */}
 			</div>
 			{/* About us - Company Logo */}
 			<div className="aboutUs-company-logo-container d-flex justify-content-center">
