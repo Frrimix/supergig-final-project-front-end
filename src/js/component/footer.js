@@ -60,7 +60,7 @@ export const Footer = () => {
 						<h5>Job-Seekers</h5>
 						<ul className="list-unstyled">
 							<li>
-								<a className="footer-link" href="/user-profile">
+								<a className="footer-link" href={store.token != null ? "/user-profile" : "/log-in"}>
 									View Profile
 								</a>
 							</li>
