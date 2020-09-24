@@ -48,7 +48,7 @@ export const Footer = () => {
 								</a>
 							</li>
 							<li>
-								<a className="footer-link" href="/job-posting">
+								<a className="footer-link" href={store.token != null ? "/job-posting" : "/log-in"}>
 									Post A Job
 								</a>
 							</li>
