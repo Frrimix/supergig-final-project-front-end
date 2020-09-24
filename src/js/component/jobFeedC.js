@@ -32,14 +32,14 @@ export const JobFeedC = () => {
 											📍&nbsp;
 											{e.job_address}
 											&nbsp;
-											{e.job_city}, &nbsp;
+											{e.job_city},&nbsp;
 											{e.job_zipcode}
 										</p>
 									</Card.Text>
 									<Card.Text>
 										<p>
 											💰&nbsp;
-											<strong>Payment $:{e.job_payment}</strong>
+											<strong>Payment: ${e.job_payment}</strong>
 										</p>
 									</Card.Text>
 								</Card.Body>
