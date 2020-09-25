@@ -14,16 +14,14 @@ export const UserProfile = () => {
 					<div key={index} className="userProfile-wraper">
 						<div className="userProfile-container d-flex align-items-center">
 							{/* Profile photo */}
-							<img
-								className="userProfile-img"
-								src="https://cdn.wallpapersafari.com/13/22/kSCTAd.jpg"></img>
+							<img className="userProfile-img" src="https://i.imgur.com/EnZp8Yp.jpg"></img>
 							<div className="userProfile-intro">
 								{/* Name */}
 								<h1 className="userProfile-name">
 									{e.first_name} {e.last_name}
 								</h1>
 								{/* Specialty*/}
-								<h5 className="userProfile-job-title">Plumber</h5>
+								{/* <h5 className="userProfile-job-title">Plumber</h5> */}
 								{/* What I do*/}
 								<p className="userProfile-about">
 									I install and repair plumbing systems in residential and commercial properties
