@@ -23,9 +23,9 @@ export const UserProfile = () => {
 								{/* Specialty*/}
 								{/* <h5 className="userProfile-job-title">Plumber</h5> */}
 								{/* What I do*/}
-								<p className="userProfile-about">
+								{/* <p className="userProfile-about">
 									I install and repair plumbing systems in residential and commercial properties
-								</p>
+								</p> */}
 
 								<hr />
 								<div className="userProgile-demographics">
