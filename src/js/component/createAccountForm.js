@@ -20,6 +20,7 @@ export const CreateAccountForm = props => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [address, setAddress] = useState("");
+	const [phone, setPhone] = useState("");
 	const [zipcode, setZipcode] = useState("");
 	const [sex, setSex] = useState("");
 	const [type_of_user, setType_of_user] = useState("");
@@ -78,12 +79,12 @@ export const CreateAccountForm = props => {
 						</Form.Group>
 
 						<Form.Group as={Col} controlId="formGridConfirmPassword">
-							<Form.Label>Confirm Password</Form.Label>
+							<Form.Label>Phone Number</Form.Label>
 							<Form.Control
-								defaultValue={password}
-								onChange={e => setPassword(e.target.value)}
-								type="password"
-								placeholder="Password"
+								defaultValue={phone}
+								onChange={e => setPhone(e.target.value)}
+								type="phone"
+								placeholder="305-555-1234"
 							/>
 						</Form.Group>
 					</Form.Row>

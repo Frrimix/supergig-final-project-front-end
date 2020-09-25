@@ -44,7 +44,7 @@ export const UserProfile = () => {
 										<strong className="userProfile-strong">E-Mail: </strong> <p>{e.email}</p>
 									</div>
 									<div className="userProfile-phone d-flex flex-row">
-										<strong className="userProfile-strong">Phone: </strong> <p>305-423-3800</p>
+										<strong className="userProfile-strong">Phone: </strong> <p>{e.phone}</p>
 									</div>
 									<div className="userProfile-freelance d-flex flex-row">
 										<strong className="userProfile-strong">Account: </strong>{" "}
