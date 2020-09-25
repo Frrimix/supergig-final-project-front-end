@@ -5,7 +5,7 @@ import "../../styles/userProfile.scss";
 import ReactBootstrap, { Jumbotron, Container, Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
 export const UserProfile = () => {
-	const { store, actions } = useContext(Context);
+	const { store } = useContext(Context);
 
 	return (
 		<Fragment>
@@ -35,17 +35,20 @@ export const UserProfile = () => {
 										<strong className="userProfile-strong">Age: </strong> <p> 24</p>
 									</div> */}
 									<div className="userProfile-address d-flex flex-row">
-										<strong className="userProfile-strong">Address: </strong> <p>{e.address}</p>
+										<strong className="userProfile-strong">Address:</strong>
+										<p>
+											{e.address},&nbsp;{e.zipcode}
+										</p>
 									</div>
 									<div className="userProfile-email d-flex flex-row">
-										<strong className="userProfile-strong">E-Mail: </strong>{" "}
-										<p>epuermas@supergig.com</p>
+										<strong className="userProfile-strong">E-Mail: </strong> <p>{e.email}</p>
 									</div>
 									<div className="userProfile-phone d-flex flex-row">
 										<strong className="userProfile-strong">Phone: </strong> <p>305-423-3800</p>
 									</div>
 									<div className="userProfile-freelance d-flex flex-row">
-										<strong className="userProfile-strong">Account: </strong> <p> Job-Seeker</p>
+										<strong className="userProfile-strong">Account: </strong>{" "}
+										<p>{e.type_of_user}</p>
 									</div>
 								</div>
 							</div>
