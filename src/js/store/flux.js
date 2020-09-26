@@ -1,4 +1,4 @@
-const url = "https://3000-d03cb8ee-dcea-4acb-8f89-c8346aaae1ca.ws-us02.gitpod.io/";
+const url = "https://supergig-backend.herokuapp.com/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
