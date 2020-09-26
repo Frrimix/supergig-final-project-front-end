@@ -117,6 +117,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(result => {
 						console.log("getting user", result), setStore({ user: result });
 					});
+			},
+			getCurrentUser: () => {
+				fetch(url + "user/<int:user_id>")
+					.then(res => res.json())
+					.then(result => {
+						console.log("getting current user", result), setStore({ currentUser: result });
+					});
 			}
 			//reset the global store
 			// setStore({ demo: demo })
