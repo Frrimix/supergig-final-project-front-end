@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import companyLogo from "../../img/supergig-logo.png";
-
+import { Context } from "../store/appContext";
 // Importing views*/
 import { JobFeed } from "../views/jobFeed";
 import { AboutUs } from "../views/aboutUs";
@@ -12,6 +12,7 @@ import { LogIn } from "../views/logIn";
 import "../../styles/components.scss";
 
 export const Navbar = () => {
+	const { store, actions } = useContext(Context);
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light">
 			{/* This is the company logo, clicking it takes you to the home-page */}
@@ -62,6 +63,19 @@ export const Navbar = () => {
 						</Link>
 					</li>
 					<li className="nav-item">
+						<div className="ml-auto">
+							{store.token != undefined ? (
+								<Link to={"/log-in"} className="nav-link" onClick={() => actions.logout()} href="#">
+									Log out
+								</Link>
+							) : (
+								<Link to={"/log-in"} className="nav-link" href="#">
+									Log in
+								</Link>
+							)}
+						</div>
+					</li>
+					<li>
 						{/* This is the User icon on the navbar, clicking it takes you to the log in view */}
 						<Link to={"/log-in"} className="nav-link" href="#">
 							<i className="nav-link fas fa-user-circle"></i>
