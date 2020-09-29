@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/userProfile.scss";
-import ReactBootstrap, { Jumbotron, Container, Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import ReactBootstrap, { Jumbotron, Container, Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 
 export const UserProfile = () => {
 	const { store, actions } = useContext(Context);
@@ -45,6 +45,9 @@ export const UserProfile = () => {
 							</div>
 							<div className="userProfile-freelance d-flex flex-row">
 								<strong className="userProfile-strong">Account: </strong> <p>{user.type_of_user}</p>
+							</div>
+							<div>
+								<Button variant="primary">Log out</Button>
 							</div>
 						</div>
 					</div>
