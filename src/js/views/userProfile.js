@@ -47,7 +47,9 @@ export const UserProfile = () => {
 								<strong className="userProfile-strong">Account: </strong> <p>{user.type_of_user}</p>
 							</div>
 							<div>
-								<Button variant="primary">Log out</Button>
+								<Button variant="primary" href="/log-in">
+									Log Out
+								</Button>
 							</div>
 						</div>
 					</div>
