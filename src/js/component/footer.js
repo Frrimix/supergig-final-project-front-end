@@ -17,9 +17,9 @@ export const Footer = () => {
 						<h5>SuperGig</h5>
 						<ul className="list-unstyled">
 							<li>
-								<a className="footer-link" href="/about-us">
+								<Link className="footer-link" to="/about-us">
 									About Us
-								</a>
+								</Link>
 							</li>
 							<li>
 								<a
@@ -31,9 +31,9 @@ export const Footer = () => {
 								</a>
 							</li>
 							<li>
-								<a className="footer-terms" href="/terms">
+								<Link className="footer-terms" to="/terms">
 									<p>Terms Of Service</p>
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -43,14 +43,14 @@ export const Footer = () => {
 						<h5>Job-Posters</h5>
 						<ul className="list-unstyled">
 							<li>
-								<a className="footer-link" href={store.token != null ? "/user-profile" : "/log-in"}>
+								<Link className="footer-link" to={store.token != null ? "/user-profile" : "/log-in"}>
 									View Profile
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a className="footer-link" href={store.token != null ? "/job-posting" : "/log-in"}>
+								<Link className="footer-link" to={store.token != null ? "/job-posting" : "/log-in"}>
 									Post A Job
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -60,14 +60,14 @@ export const Footer = () => {
 						<h5>Job-Seekers</h5>
 						<ul className="list-unstyled">
 							<li>
-								<a className="footer-link" href={store.token != null ? "/user-profile" : "/log-in"}>
+								<Link className="footer-link" to={store.token != null ? "/user-profile" : "/log-in"}>
 									View Profile
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a className="footer-link" href="/jobs">
+								<Link className="footer-link" to="/jobs">
 									View Jobs
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
