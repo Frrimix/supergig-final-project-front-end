@@ -66,20 +66,20 @@ export const Navbar = () => {
 						<div className="ml-auto">
 							{store.token != undefined ? (
 								<Link to={"/log-in"} className="nav-link" onClick={() => actions.logout()} href="#">
-									Log out
+									Log Out
 								</Link>
 							) : (
 								<Link to={"/log-in"} className="nav-link" href="#">
-									Log in
+									Log In
 								</Link>
 							)}
 						</div>
 					</li>
 					<li>
 						{/* This is the User icon on the navbar, clicking it takes you to the log in view */}
-						<Link to={"/log-in"} className="nav-link" href="#">
+						<a className="nav-link" href={store.token != null ? "/user-profile" : "/log-in"}>
 							<i className="nav-link fas fa-user-circle"></i>
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</div>
