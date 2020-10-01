@@ -11,7 +11,7 @@ export const GoogleMaps = () => {
 		// Map Options
 		var options = {
 			zoom: 8,
-			center: { lat: 25.7617, lng: 80.1918 }
+			center: { lat: 25.7617, lng: -80.1918 }
 		};
 
 		// New Map
@@ -19,7 +19,7 @@ export const GoogleMaps = () => {
 
 		// Add Marker
 		var marker = new google.maps.Marker({
-			position: { lat: 25.7617, lng: 80.1918 },
+			position: { lat: 25.7617, lng: -80.1918 },
 			map: map
 		});
 	}
