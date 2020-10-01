@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import ReactBootstrap, { Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
+import { GoogleMaps } from "./../component/googleMaps";
 
 export const JobView = () => {
 	return (
@@ -17,11 +18,12 @@ export const JobView = () => {
 					$100 I would appreciate it. We would buy all necessary parts.
 				</p>
 				<p className="jobView-address">1102 SW 105 Ave, Miami, FL 33174</p>
+				<Link to={"/jobs"} className="d-flex justify-content-center" href="#">
+					<a className="jobView-return">Return to jobs</a>
+				</Link>
 			</div>
 
-			<Link to={"/jobs"} href="#">
-				<a className="jobView-return">Return to jobs</a>
-			</Link>
+			<GoogleMaps />
 		</div>
 	);
 };

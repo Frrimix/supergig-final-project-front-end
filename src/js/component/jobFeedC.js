@@ -21,7 +21,7 @@ export const JobFeedC = () => {
 					<CardGroup key={index}>
 						{/* This is sample card one */}
 						<Card>
-							<a className="card-block stretched-link text-decoration-none" href="/job-view">
+							<Link to="/job-view" className="card-block stretched-link text-decoration-none" href="#">
 								<Card.Body className="jobFeedCard .stretched-link" href="#">
 									<Card.Title>{e.job_title}</Card.Title>
 									<Card.Text>
@@ -43,7 +43,7 @@ export const JobFeedC = () => {
 										</p>
 									</Card.Text>
 								</Card.Body>
-							</a>
+							</Link>
 							<Card.Footer>
 								<small className="text-muted">Posted 3 mins ago</small>
 							</Card.Footer>
