@@ -77,9 +77,9 @@ export const Navbar = () => {
 					</li>
 					<li>
 						{/* This is the User icon on the navbar, clicking it takes you to the log in view */}
-						<a className="nav-link" href={store.token != null ? "/user-profile" : "/log-in"}>
+						<Link className="nav-link" to={store.token != null ? "/user-profile" : "/log-in"}>
 							<i className="nav-link fas fa-user-circle"></i>
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

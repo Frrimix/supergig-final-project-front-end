@@ -11,7 +11,7 @@ export const JobFeed = () => {
 	const [job, setJob] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [jobPerPage, setJobPerPage] = useState(5);
+	const [jobPerPage, setJobPerPage] = useState(3);
 	const { store, actions } = useContext(Context);
 
 	const indexOfLastJob = currentPage * jobPerPage;
