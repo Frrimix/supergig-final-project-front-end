@@ -35,7 +35,7 @@ export const JobFeed = () => {
 				<JobFeedC job={currentJob} loading={loading} />
 			</div>
 			<div className="jobFeed-pagination d-flex justify-content-center">
-				<PaginationC />
+				<PaginationC jobPerPage={jobPerPage} totalJob={job.length} />
 			</div>
 		</div>
 	);
