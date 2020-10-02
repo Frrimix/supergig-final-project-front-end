@@ -23,7 +23,7 @@ export const JobView = () => {
 				</Link>
 			</div>
 
-			<GoogleMaps />
+			{/* <GoogleMaps /> */}
 		</div>
 	);
 };

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import ReactBootstrap, { Dropdown, DropdownButton, Form, FormControl, Button } from "react-bootstrap";
@@ -7,6 +8,16 @@ import { JobFeedC } from "../component/jobFeedC";
 import { PaginationC } from "../component/pagination";
 
 export const JobFeed = () => {
+	const [job, setJob] = useState([]);
+	const [loading, setLoading] = useState(false);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [jobPerPage, setJobPerPage] = useState(5);
+	const { store, actions } = useContext(Context);
+
+	const indexOfLastJob = currentPage * jobPerPage;
+	const indexOfFirstJob = indexOfLastJob - jobPerPage;
+	const currentJob = job.slice(indexOfFirstJob, indexOfLastJob);
+
 	return (
 		<div className="jobFeed-wrapper">
 			<div className="jobFeed-buttons d-flex justify-content-center">
@@ -21,7 +32,7 @@ export const JobFeed = () => {
 				</DropdownButton>
 			</div>
 			<div className="jobFeed-container d-flex justify-content-center ">
-				<JobFeedC />
+				<JobFeedC job={currentJob} loading={loading} />
 			</div>
 			<div className="jobFeed-pagination d-flex justify-content-center">
 				<PaginationC />

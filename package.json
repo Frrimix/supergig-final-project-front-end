@@ -70,6 +70,7 @@
 		]
 	},
 	"dependencies": {
+		"axios": "^0.20.0",
 		"bootstrap": "^4.5.2",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
