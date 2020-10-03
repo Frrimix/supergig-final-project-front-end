@@ -18,12 +18,12 @@ export const JobView = () => {
 					$100 I would appreciate it. We would buy all necessary parts.
 				</p>
 				<p className="jobView-address">1102 SW 105 Ave, Miami, FL 33174</p>
+				<SimpleMap />
+				<br />
 				<Link to={"/jobs"} className="d-flex justify-content-center" href="#">
 					<a className="jobView-return">Return to jobs</a>
 				</Link>
 			</div>
-
-			<SimpleMap />
 		</div>
 	);
 };
