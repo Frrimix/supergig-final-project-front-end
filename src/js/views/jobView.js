@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import ReactBootstrap, { Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
-import { GoogleMaps } from "./../component/googleMaps";
+import { MapContainer } from "./../component/googleMaps";
 
 export const JobView = () => {
 	return (
@@ -23,7 +23,7 @@ export const JobView = () => {
 				</Link>
 			</div>
 
-			{/* <GoogleMaps /> */}
+			<MapContainer />
 		</div>
 	);
 };
