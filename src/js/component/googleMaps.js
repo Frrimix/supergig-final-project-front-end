@@ -3,18 +3,29 @@ import { Context } from "../store/appContext";
 import PropTypes from "prop-types";
 import { render } from "react-dom";
 import { Link } from "react-router-dom";
-import GoogleMapReact from "google-map-react";
+import GoogleMapReact, { Marker } from "google-map-react";
 
 // Importing styles*/
 import "../../styles/googleMaps.scss";
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const markerStyle = {
+	height: "15px",
+	width: "15px",
+	backgroundColor: "red",
+	borderRadius: "50%"
+};
+// Variable for marker below
+const AnyReactComponent = props => <div style={markerStyle}></div>;
+
+AnyReactComponent.propTypes = {
+	text: PropTypes.string
+};
 
 class SimpleMap extends Component {
 	static defaultProps = {
 		center: {
-			lat: 25.7617,
-			lng: -80.1918
+			lat: 25.7589893,
+			lng: -80.3665177
 		},
 		zoom: 13
 	};
@@ -27,8 +38,10 @@ class SimpleMap extends Component {
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
 						defaultCenter={this.props.center}
-						defaultZoom={this.props.zoom}>
-						{/* <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" /> */}
+						defaultZoom={this.props.zoom}
+						yesIWantToUseGoogleMapApiInternals>
+						{/* Marker is located below */}
+						<AnyReactComponent lat={this.props.center.lat} lng={this.props.center.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -37,7 +50,6 @@ class SimpleMap extends Component {
 }
 
 SimpleMap.propTypes = {
-	text: PropTypes.string,
 	center: PropTypes.object,
 	zoom: PropTypes.number
 };
