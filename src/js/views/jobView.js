@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import ReactBootstrap, { Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
 import SimpleMap, { MapContainer } from "./../component/googleMaps";
 import SimpleMapSingle from "../component/googleMapsSingle";
+import PropTypes from "prop-types";
 
 export const JobView = () => {
+	const { store, actions } = useContext(Context);
 	return (
 		<div className="jobView-container">
 			<div className="jobView-wrapper">
-				<h1 className="jobView-title">Need help with a leaky faucet</h1>
+				<h1 className="jobView-title">Job Title</h1>
 				<hr />
 				<p className="jobView-description">
 					The faucet on my kitchen has been leaking for the past few days. My husband has tried tightening all
