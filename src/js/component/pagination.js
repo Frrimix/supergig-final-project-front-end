@@ -23,7 +23,7 @@ export const PaginationC = ({ jobPerPage, totalJob }) => {
 	const indexOfFirstJob = indexOfLastJob - jobPerPage;
 	const currentJob = job.slice(indexOfFirstJob, indexOfLastJob);
 
-	const pageNumbers = [1];
+	const pageNumbers = [1, 2];
 
 	for (let i = 1; i <= Math.ceil(totalJob / jobPerPage); i++) {
 		pageNumbers.push(i);

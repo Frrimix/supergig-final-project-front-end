@@ -6,6 +6,8 @@ import ReactBootstrap, { Dropdown, DropdownButton, Form, FormControl, Button } f
 import "../../styles/jobFeed.scss";
 import { JobFeedC } from "../component/jobFeedC";
 import { PaginationC } from "../component/pagination";
+import { Fragment } from "react";
+import SimpleMap from "../component/googleMaps";
 
 export const JobFeed = () => {
 	const [job, setJob] = useState([]);
@@ -19,24 +21,29 @@ export const JobFeed = () => {
 	const currentJob = job.slice(indexOfFirstJob, indexOfLastJob);
 
 	return (
-		<div className="jobFeed-wrapper">
-			<div className="jobFeed-buttons d-flex justify-content-center">
-				<Form.Control className="jobFeed-zipcode-search" type="text" placeholder="Enter your zipcode" />
-				<Button className="jobFeed-zipcode-search-button" href="#">
-					Search
-				</Button>
-				<DropdownButton id="dropdown-button" title="Sort by">
-					<Dropdown.Item href="#/action-1">Closest Location</Dropdown.Item>
-					<Dropdown.Item href="#/action-2">Highest Paying</Dropdown.Item>
-					<Dropdown.Item href="#/action-3">Most Recent</Dropdown.Item>
-				</DropdownButton>
+		<Fragment>
+			<div className="jobFeed-container d-flex justify-content-around">
+				<div className="jobFeed-wrapper">
+					<div className="jobFeed-buttons d-flex justify-content-center">
+						<Form.Control className="jobFeed-zipcode-search" type="text" placeholder="Enter your zipcode" />
+						<Button className="jobFeed-zipcode-search-button" href="#">
+							Search
+						</Button>
+						<DropdownButton id="dropdown-button" title="Sort by">
+							<Dropdown.Item href="#/action-1">Closest Location</Dropdown.Item>
+							<Dropdown.Item href="#/action-2">Highest Paying</Dropdown.Item>
+							<Dropdown.Item href="#/action-3">Most Recent</Dropdown.Item>
+						</DropdownButton>
+					</div>
+					<div className="jobFeed-container d-flex justify-content-center ">
+						<JobFeedC job={currentJob} loading={loading} />
+					</div>
+					<div className="jobFeed-pagination d-flex justify-content-center">
+						<PaginationC jobPerPage={jobPerPage} totalJob={job.length} />
+					</div>
+				</div>
+				<SimpleMap className="jobFeed-map" />
 			</div>
-			<div className="jobFeed-container d-flex justify-content-center ">
-				<JobFeedC job={currentJob} loading={loading} />
-			</div>
-			<div className="jobFeed-pagination d-flex justify-content-center">
-				<PaginationC jobPerPage={jobPerPage} totalJob={job.length} />
-			</div>
-		</div>
+		</Fragment>
 	);
 };

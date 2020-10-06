@@ -11,6 +11,7 @@ import "../../styles/googleMaps.scss";
 const markerStyle = {
 	height: "15px",
 	width: "15px",
+	// backgroundImage: "url('https://i.imgur.com/w49gAO2.png')",
 	backgroundColor: "red",
 	borderRadius: "50%"
 };
@@ -27,14 +28,28 @@ class SimpleMap extends Component {
 			lat: 25.7589893,
 			lng: -80.3665177
 		},
-		zoom: 13
+		markers: {
+			lat: 25.6862372,
+			lng: -80.3486671
+		},
+		markers: {
+			lat: 25.6846475,
+			lng: -80.3176725
+		},
+		zoom: 12
 	};
 
 	render() {
 		return (
 			<div className="google-maps-wrapper">
 				{/* // Important! Always set the container height explicitly */}
-				<div className="google-maps-container" style={{ height: "400px", width: "500px" }}>
+				<div
+					className="google-maps-container"
+					style={{
+						height: "90%",
+						width: "800px",
+						marginTop: "100px"
+					}}>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
 						defaultCenter={this.props.center}
@@ -42,6 +57,7 @@ class SimpleMap extends Component {
 						yesIWantToUseGoogleMapApiInternals>
 						{/* Marker is located below */}
 						<AnyReactComponent lat={this.props.center.lat} lng={this.props.center.lng} />
+						<AnyReactComponent lat={this.props.markers.lat} lng={this.props.markers.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -51,6 +67,7 @@ class SimpleMap extends Component {
 
 SimpleMap.propTypes = {
 	center: PropTypes.object,
+	markers: PropTypes.any,
 	zoom: PropTypes.number
 };
 

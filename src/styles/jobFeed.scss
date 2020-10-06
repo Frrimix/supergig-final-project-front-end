@@ -1,8 +1,8 @@
 .jobFeed-container {
     margin-top: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .btn {
@@ -19,7 +19,7 @@
 }
 
 .jobFeed-zipcode-search {
-    width: 15%!important;
+    width: 200px!important;
 }
 
 .jobFeed-zipcode-search-button {
@@ -29,6 +29,13 @@
 .jobFeed-zipcode-search-button:hover {
     background-color: #237034;
     border-color: #237034;
+}
+
+.jobFeed-map {
+    margin-left: 2rem;
+    margin-top: 30px;
+    position: relative;
+    left: 800px;
 }
 
 
