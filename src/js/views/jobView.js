@@ -4,6 +4,7 @@ import { Context } from "../store/appContext";
 import ReactBootstrap, { Button } from "react-bootstrap";
 import "../../styles/jobView.scss";
 import SimpleMap, { MapContainer } from "./../component/googleMaps";
+import SimpleMapSingle from "../component/googleMapsSingle";
 
 export const JobView = () => {
 	return (
@@ -18,7 +19,7 @@ export const JobView = () => {
 					$100 I would appreciate it. We would buy all necessary parts.
 				</p>
 				<p className="jobView-address">1102 SW 105 Ave, Miami, FL 33174</p>
-				{/* <SimpleMap /> */}
+				<SimpleMapSingle />
 				<br />
 				<Link to={"/jobs"} className="d-flex justify-content-center" href="#">
 					<a className="jobView-return">Return to jobs</a>

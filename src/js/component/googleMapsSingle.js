@@ -22,20 +22,12 @@ AnyReactComponent.propTypes = {
 	text: PropTypes.string
 };
 
-class SimpleMap extends Component {
+class SimpleMapSingle extends Component {
 	static defaultProps = {
 		center: {
 			lat: 25.7589893,
 			lng: -80.3665177
 		},
-		markers: {
-			lat: 25.6862372,
-			lng: -80.3486671
-		},
-		// markers: {
-		// 	lat: 25.6846475,
-		// 	lng: -80.3176725
-		// },
 		zoom: 12
 	};
 
@@ -46,9 +38,11 @@ class SimpleMap extends Component {
 				<div
 					className="google-maps-container"
 					style={{
-						height: "90%",
-						width: "800px",
-						marginTop: "100px"
+						height: "400px",
+						width: "600px",
+						marginTop: "25px",
+						marginLeft: "auto",
+						marginRight: "auto"
 					}}>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
@@ -57,7 +51,6 @@ class SimpleMap extends Component {
 						yesIWantToUseGoogleMapApiInternals>
 						{/* Marker is located below */}
 						<AnyReactComponent lat={this.props.center.lat} lng={this.props.center.lng} />
-						<AnyReactComponent lat={this.props.markers.lat} lng={this.props.markers.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -65,10 +58,9 @@ class SimpleMap extends Component {
 	}
 }
 
-SimpleMap.propTypes = {
+SimpleMapSingle.propTypes = {
 	center: PropTypes.object,
-	markers: PropTypes.any,
 	zoom: PropTypes.number
 };
 
-export default SimpleMap;
+export default SimpleMapSingle;
