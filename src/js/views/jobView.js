@@ -19,10 +19,6 @@ export const JobView = () => {
 
 	let address = job && `${job.job_address} ${job.job_city}, ${job.job_state} ${job.job_zipcode}`;
 
-	useEffect(() => {
-		console.log(job, jobID);
-	});
-
 	return (
 		<div className="jobView-container">
 			<div className="jobView-wrapper">

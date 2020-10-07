@@ -39,9 +39,7 @@ class SimpleMapSingle extends Component {
 		};
 	}
 
-	componentDidMount() {
-		console.log("address", this.props.address);
-		// Get latitude & longitude from address.
+	getCenter = () => {
 		Geocode.fromAddress(this.props.address).then(
 			response => {
 				const { lat, lng } = response.results[0].geometry.location;
@@ -57,9 +55,7 @@ class SimpleMapSingle extends Component {
 				console.error(error);
 			}
 		);
-	}
-
-	getCenter = () => {};
+	};
 
 	render() {
 		return (
@@ -76,9 +72,17 @@ class SimpleMapSingle extends Component {
 					}}>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
-						center={this.getCenter()}
+						center={this.state.center}
+						defaultCenter={{ lat: 59.95, lng: 30.33 }}
 						defaultZoom={this.state.zoom}
-						yesIWantToUseGoogleMapApiInternals>
+						yesIWantToUseGoogleMapApiInternals
+						onGoogleApiLoaded={({ map, maps }) => {
+							this.getCenter();
+							const center = new google.maps.LatLng(this.state.center.lat, this.state.center.lng);
+
+							// using global variable:
+							map.panTo(center);
+						}}>
 						{/* Marker is located below */}
 						<AnyReactComponent lat={this.state.center.lat} lng={this.state.center.lng} />
 					</GoogleMapReact>
