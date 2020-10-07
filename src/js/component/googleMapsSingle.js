@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import { render } from "react-dom";
 import { Link } from "react-router-dom";
 import GoogleMapReact, { Marker } from "google-map-react";
+import Geocode from "react-geocode";
+
+// set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
+Geocode.setApiKey(process.env.GEOCODER_API_KEY);
 
 // Importing styles*/
 import "../../styles/googleMaps.scss";
@@ -23,13 +27,39 @@ AnyReactComponent.propTypes = {
 };
 
 class SimpleMapSingle extends Component {
-	static defaultProps = {
-		center: {
-			lat: 25.7589893,
-			lng: -80.3665177
-		},
-		zoom: 12
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			center: {
+				lat: 0,
+				lng: 0
+			},
+
+			zoom: 12
+		};
+	}
+
+	componentDidMount() {
+		console.log("address", this.props.address);
+		// Get latitude & longitude from address.
+		Geocode.fromAddress(this.props.address).then(
+			response => {
+				const { lat, lng } = response.results[0].geometry.location;
+				console.log("lat/long", lat, lng);
+				this.setState({
+					center: {
+						lat: lat,
+						lng: lng
+					}
+				});
+			},
+			error => {
+				console.error(error);
+			}
+		);
+	}
+
+	getCenter = () => {};
 
 	render() {
 		return (
@@ -46,11 +76,11 @@ class SimpleMapSingle extends Component {
 					}}>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
-						defaultCenter={this.props.center}
-						defaultZoom={this.props.zoom}
+						center={this.getCenter()}
+						defaultZoom={this.state.zoom}
 						yesIWantToUseGoogleMapApiInternals>
 						{/* Marker is located below */}
-						<AnyReactComponent lat={this.props.center.lat} lng={this.props.center.lng} />
+						<AnyReactComponent lat={this.state.center.lat} lng={this.state.center.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -59,6 +89,7 @@ class SimpleMapSingle extends Component {
 }
 
 SimpleMapSingle.propTypes = {
+	address: PropTypes.string.isRequired,
 	center: PropTypes.object,
 	zoom: PropTypes.number
 };

@@ -45,7 +45,10 @@ export const JobFeedC = () => {
 				<CardGroup key={job.id}>
 					{/* This is sample card one */}
 					<Card>
-						<Link to="/job-view" className="card-block stretched-link text-decoration-none" href="#">
+						<Link
+							to={`/job-view/${job.id}`}
+							className="card-block stretched-link text-decoration-none"
+							href="#">
 							<Card.Body className="jobFeedCard .stretched-link" href="#">
 								<Card.Title>{job.job_title}</Card.Title>
 								<Card.Text>

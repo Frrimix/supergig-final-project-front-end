@@ -55,7 +55,7 @@ const Layout = () => {
 								<JobFeed />
 							</Route>
 							{/* The route below takes you to job view */}
-							<Route exact path="/job-view">
+							<Route exact path="/job-view/:jobID">
 								<JobView />
 							</Route>
 							{/* The route below takes you to job posting */}
