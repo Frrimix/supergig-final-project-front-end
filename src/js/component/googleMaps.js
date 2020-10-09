@@ -25,17 +25,25 @@ AnyReactComponent.propTypes = {
 class SimpleMap extends Component {
 	static defaultProps = {
 		center: {
-			lat: 25.7589893,
-			lng: -80.3665177
+			lat: 25.7268,
+			lng: -80.3553
 		},
 		markers: {
 			lat: 25.6862372,
 			lng: -80.3486671
 		},
-		// markers: {
-		// 	lat: 25.6846475,
-		// 	lng: -80.3176725
-		// },
+		markers1: {
+			lat: 25.6846475,
+			lng: -80.3176725
+		},
+		markers2: {
+			lat: 25.736229,
+			lng: -80.3474447
+		},
+		markers3: {
+			lat: 25.7594497,
+			lng: -80.3678427
+		},
 		zoom: 12
 	};
 
@@ -46,9 +54,11 @@ class SimpleMap extends Component {
 				<div
 					className="google-maps-container"
 					style={{
-						height: "90%",
-						width: "800px",
-						marginTop: "100px"
+						height: "500px",
+						width: "650px",
+						marginTop: "95px",
+						position: "fixed",
+						right: "1rem"
 					}}>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: "AIzaSyCjV5S1bkd7RssX1Z7cytvypvQAgchTt8A" }}
@@ -58,6 +68,9 @@ class SimpleMap extends Component {
 						{/* Marker is located below */}
 						<AnyReactComponent lat={this.props.center.lat} lng={this.props.center.lng} />
 						<AnyReactComponent lat={this.props.markers.lat} lng={this.props.markers.lng} />
+						<AnyReactComponent lat={this.props.markers1.lat} lng={this.props.markers1.lng} />
+						<AnyReactComponent lat={this.props.markers2.lat} lng={this.props.markers2.lng} />
+						<AnyReactComponent lat={this.props.markers3.lat} lng={this.props.markers3.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -68,6 +81,9 @@ class SimpleMap extends Component {
 SimpleMap.propTypes = {
 	center: PropTypes.object,
 	markers: PropTypes.any,
+	markers1: PropTypes.any,
+	markers2: PropTypes.any,
+	markers3: PropTypes.any,
 	zoom: PropTypes.number
 };
 
