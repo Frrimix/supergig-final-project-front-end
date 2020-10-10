@@ -54,7 +54,7 @@ class SimpleMap extends Component {
 				<div
 					className="google-maps-container"
 					style={{
-						height: "500px",
+						height: "600px",
 						width: "650px",
 						marginTop: "95px",
 						position: "fixed",
