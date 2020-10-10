@@ -64,7 +64,7 @@ class SimpleMapSingle extends Component {
 				<div
 					className="google-maps-container"
 					style={{
-						height: "600px",
+						height: "400px",
 						width: "600px",
 						marginTop: "25px",
 						marginLeft: "auto",

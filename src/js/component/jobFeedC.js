@@ -39,6 +39,12 @@ export const JobFeedC = () => {
 		return <h2>Loading...</h2>;
 	}
 
+	// if (store.token == null) {
+	// 	return <h2>You must log-in to view job description</h2>;
+	// }
+
+	let isLoggedIn = store.token != null;
+
 	return (
 		<div className="jobFeed-container">
 			{job.map(job => (
@@ -52,7 +58,12 @@ export const JobFeedC = () => {
 							<Card.Body className="jobFeedCard .stretched-link" href="#">
 								<Card.Title>{job.job_title}</Card.Title>
 								<Card.Text>
-									<p>{job.job_description}</p>
+									{isLoggedIn ? (
+										<p>{job.job_description}</p>
+									) : (
+										<h2>You must log-in to view job description</h2>
+									)}
+									{/* <p>{job.job_description}</p> */}
 								</Card.Text>
 								<Card.Text>
 									<p>
