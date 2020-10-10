@@ -44,6 +44,14 @@ class SimpleMap extends Component {
 			lat: 25.7594497,
 			lng: -80.3678427
 		},
+		markers4: {
+			lat: 25.7351285,
+			lng: -80.3726209
+		},
+		markers5: {
+			lat: 25.7685469,
+			lng: -80.3396823
+		},
 		zoom: 12
 	};
 
@@ -56,8 +64,11 @@ class SimpleMap extends Component {
 					style={{
 						height: "600px",
 						width: "650px",
-						marginTop: "95px",
-						position: "fixed",
+						// marginTop: "95px",
+						paddingTop: "95px",
+						position: "-webkit-sticky",
+						position: "sticky",
+						top: "0",
 						right: "1rem"
 					}}>
 					<GoogleMapReact
@@ -71,6 +82,8 @@ class SimpleMap extends Component {
 						<AnyReactComponent lat={this.props.markers1.lat} lng={this.props.markers1.lng} />
 						<AnyReactComponent lat={this.props.markers2.lat} lng={this.props.markers2.lng} />
 						<AnyReactComponent lat={this.props.markers3.lat} lng={this.props.markers3.lng} />
+						<AnyReactComponent lat={this.props.markers4.lat} lng={this.props.markers4.lng} />
+						<AnyReactComponent lat={this.props.markers5.lat} lng={this.props.markers5.lng} />
 					</GoogleMapReact>
 				</div>
 			</div>
@@ -84,6 +97,8 @@ SimpleMap.propTypes = {
 	markers1: PropTypes.any,
 	markers2: PropTypes.any,
 	markers3: PropTypes.any,
+	markers4: PropTypes.any,
+	markers5: PropTypes.any,
 	zoom: PropTypes.number
 };
 
