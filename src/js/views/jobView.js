@@ -6,6 +6,7 @@ import "../../styles/jobView.scss";
 import SimpleMap, { MapContainer } from "./../component/googleMaps";
 import SimpleMapSingle from "../component/googleMapsSingle";
 import PropTypes from "prop-types";
+import companyLogo from "../../img/supergig-logo.png";
 
 export const JobView = () => {
 	const { store, actions } = useContext(Context);
@@ -30,7 +31,12 @@ export const JobView = () => {
 				You must log-in to view job description
 				<br />
 				<br />
-				<Link to="/log-in">Click here to log-in</Link>
+				<Link className="jobView-logIn" to="/log-in">
+					Click here to log-in
+				</Link>
+				<br />
+				<br />
+				<img className="aboutUs-company-logo" src={companyLogo} href="#" />
 			</h2>
 		);
 	}

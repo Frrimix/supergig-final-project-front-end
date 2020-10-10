@@ -61,7 +61,7 @@ export const JobFeedC = () => {
 									{isLoggedIn ? (
 										<p>{job.job_description}</p>
 									) : (
-										<h2>You must log-in to view job description</h2>
+										<strong>**You must log-in to view job description**</strong>
 									)}
 									{/* <p>{job.job_description}</p> */}
 								</Card.Text>
