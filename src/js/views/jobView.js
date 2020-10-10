@@ -47,8 +47,8 @@ export const JobView = () => {
 				<h1 className="jobView-title">{job && job.job_title}</h1>
 				<hr />
 				<p className="jobView-description">{job && job.job_description}</p>
-				<p className="jobView-payment">Payment: ${job && job.job_payment}</p>
-				<p className="jobView-address">{job && address}</p>
+				<p className="jobView-payment"> 💰&nbsp;Payment: ${job && job.job_payment}</p>
+				<p className="jobView-address">📍&nbsp;{job && address}</p>
 				{address !== "" && <SimpleMapSingle address={address} />}
 				<br />
 				<Link to={"/jobs"} className="d-flex justify-content-center" href="#">
