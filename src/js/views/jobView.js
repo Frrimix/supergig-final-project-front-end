@@ -28,7 +28,7 @@ export const JobView = () => {
 					marginTop: "300px",
 					marginBottom: "300px"
 				}}>
-				You must log-in to view job description
+				You must log-in to view job descriptions
 				<br />
 				<br />
 				<Link className="jobView-logIn" to="/log-in">
