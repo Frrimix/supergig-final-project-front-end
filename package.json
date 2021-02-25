@@ -39,7 +39,7 @@
 		"css-loader": "^2.1.1",
 		"dotenv-webpack": "^1.8.0",
 		"envfile": "^3.1.0",
-		"error-overlay-webpack-plugin": "^0.2.0",
+		"error-overlay-webpack-plugin": "^0.4.2",
 		"eslint": "^4.19.1",
 		"eslint-loader": "^2.2.1",
 		"eslint-plugin-react": "^7.20.6",
@@ -70,7 +70,8 @@
 		]
 	},
 	"dependencies": {
-		"axios": "^0.20.0",
+		"agentkeepalive": "^4.1.4",
+		"axios": "^0.21.1",
 		"bootstrap": "^4.5.2",
 		"google-map-react": "^2.1.7",
 		"google-maps-react": "^2.0.6",
